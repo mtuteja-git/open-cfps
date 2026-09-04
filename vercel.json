@@ -35,6 +35,17 @@
       ],
       "destination": "https://cfps.manvikatuteja.com/:path*",
       "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "cpfs.manvikatuteja.com"
+        }
+      ],
+      "destination": "https://cfps.manvikatuteja.com/:path*",
+      "permanent": true
     }
   ]
 }
