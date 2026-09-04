@@ -4,7 +4,7 @@ A board of open calls for papers in: open source, cloud native, databases, Linux
 
 Automations run by my dear friend, Claude Code <3 
 
-Live at https://open-cfps.vercel.app.
+Live at https://cfps.manvikatuteja.com.
 
 ## How it works
 

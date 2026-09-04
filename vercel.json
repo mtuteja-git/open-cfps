@@ -1,9 +1,40 @@
 {
   "rewrites": [
-    { "source": "/cal.ics", "destination": "/api/cal" },
-    { "source": "/cfps.json", "destination": "/data/cfps.json" }
+    {
+      "source": "/cal.ics",
+      "destination": "/api/cal"
+    },
+    {
+      "source": "/cfps.json",
+      "destination": "/data/cfps.json"
+    }
   ],
   "headers": [
-    { "source": "/data/cfps.json", "headers": [ { "key": "Access-Control-Allow-Origin", "value": "*" }, { "key": "Cache-Control", "value": "public, max-age=600" } ] }
+    {
+      "source": "/data/cfps.json",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=600"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "open-cfps.vercel.app"
+        }
+      ],
+      "destination": "https://cfps.manvikatuteja.com/:path*",
+      "permanent": true
+    }
   ]
 }

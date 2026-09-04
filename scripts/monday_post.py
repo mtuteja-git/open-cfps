@@ -9,7 +9,7 @@ whose body carries an external link.
 import json, datetime, pathlib, sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-BOARD = "https://open-cfps.vercel.app"
+BOARD = "https://cfps.manvikatuteja.com"
 data = json.loads((ROOT / "data" / "cfps.json").read_text(encoding="utf-8"))
 today = datetime.date.today()
 iso = today.isoformat()
