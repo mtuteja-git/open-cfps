@@ -22,14 +22,14 @@ rows = [r for r in data["cfps"] if days(r) >= 0]
 rows.sort(key=lambda r: (0 if days(r) <= 14 else 1 if r["added"] == data["updated"] else 2, days(r)))
 top = rows[:5]
 
-lines = ["Open CFPs this week: " + str(len(rows)) + " calls for talks an engineer would actually submit to.", ""]
+lines = [str(len(rows)) + " open CFPs this week. The ones closing soonest:", ""]
 for r in top:
     n = days(r)
     left = "closes today" if n == 0 else f"{n} day{'s' if n != 1 else ''} left"
     name = r["name"].split(" (")[0]
     where = "" if r["city"].lower() in name.lower() else f", {r['city']}"
     lines.append(f"{name}{where}: {left}, closes {fmt(r['close'])}")
-lines += ["", f"The full list, with filters by topic and country and a calendar feed of every deadline, is in the first comment. Updated every Monday.", "", "#CFP #OpenSource #CloudNative #AIEngineering #DevRel"]
+lines += ["", "Full list, filters by topic and country, and a calendar feed in the first comment. Refreshed every Monday.", "", "#CFP #OpenSource #CloudNative #AIEngineering"]
 post = "\n".join(lines)
 comment = f"Full board, filters and calendar feed: {BOARD}"
 
