@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .ink { stroke: #222222; fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .lash { stroke-width: 1.3; }
+    .pupil { fill: #8C1D33; }
+    .word { font-family: "JetBrains Mono", "SF Mono", Menlo, Consolas, monospace; font-size: 11.5px; letter-spacing: 0; font-weight: 500; fill: #222222; }
+    @media (prefers-color-scheme: dark) {
+      .ink { stroke: #DADADA; }
+      .pupil { fill: #E3697D; }
+      .word { fill: #DADADA; }
+    }
+  </style>
+  <g transform="translate(3 2) scale(1)">
+    <path class="ink" d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/>
+    <path class="ink lash" d="M7.3 11 L5.9 13.9 M13 11.8 L13 14.9 M18.7 11 L20.1 13.9"/>
+    <clipPath id="c"><path d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/></clipPath>
+    <circle class="pupil" clip-path="url(#c)" cx="13" cy="8" r="3.6"/>
+  </g>
+  <text class="word" x="16" y="29.5" text-anchor="middle">cfp</text>
+</svg>
