@@ -2,7 +2,7 @@
 
 A board of open calls for papers in: open source, cloud native, databases, Linux and systems, AI infrastructure, agents and MCP, SRE and observability, developer tooling. 
 
-Automations run by my dear friend, Claude Code <3 
+Automations run by my bestie, Claude Code <3 
 
 Live at https://cfps.manvikatuteja.com.
 
