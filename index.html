@@ -4,7 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Open CFPs</title>
-<meta name="description" content="Open calls for papers an engineer would actually submit to: open source, cloud native, databases, systems, AI infrastructure, agents and MCP. Updated every Monday.">
+<meta name="description" content="Open calls for papers, verified on the organiser's own CFP page: open source, cloud native, databases, systems, AI infrastructure, agents and MCP. Updated every Monday.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Open CFPs">
+<meta property="og:description" content="Verified open calls for papers for engineers: open source, cloud native, databases, systems, AI infrastructure, agents and MCP. Filter by topic and country, add deadlines to your calendar. Updated every Monday.">
+<meta property="og:url" content="https://cfps.manvikatuteja.com/">
+<meta property="og:site_name" content="cfps.manvikatuteja.com">
+<meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%238C1D33%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22system-ui%22 font-size=%2216%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22%3ECFP%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -154,6 +160,7 @@
     </div>
     <nav class="feeds" aria-label="Subscribe">
       <a href="#" id="cal-all" title="Every deadline on this page, in your calendar, kept current each Monday">Add all to my calendar</a>
+      <a href="#" id="cal-all-copy" title="For Google Calendar: paste this under Other calendars, From URL">Copy calendar link</a>
       <a href="https://github.com/mtuteja-git/open-cfps/issues/new?template=cfp.yml" target="_blank" rel="noopener" title="Open an issue on GitHub">Suggest a CFP</a>
     </nav>
   </header>
@@ -227,6 +234,12 @@
     const countries = new Set(rows.map(r => r.country));
     $('last').textContent = ' Last update ' + fmt(data.updated) + ', ' + d(data.updated).getFullYear() + '.';
     $('cal-all').href = feedBase();
+    $('cal-all-copy').onclick = async (e) => {
+      e.preventDefault();
+      const url = feedBase().replace(/^webcal:/, 'https:');
+      try { await navigator.clipboard.writeText(url); toast('Link copied. In Google Calendar: Other calendars, From URL, paste.'); }
+      catch (err) { prompt('Copy this link', url); }
+    };
 
     // Closing strip
     const soon = rows.filter(r => r.days <= 7);
