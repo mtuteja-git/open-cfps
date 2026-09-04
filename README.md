@@ -2,7 +2,7 @@
 
 A board of open calls for papers that a working engineer would actually submit to: open source, cloud native, databases, Linux and systems, AI infrastructure, agents and MCP, SRE and observability, developer tooling.
 
-Live at https://cfps.manvikatuteja.com (until the domain is pointed, https://open-cfps.vercel.app).
+Live at https://open-cfps.vercel.app.
 
 ## How it works
 
