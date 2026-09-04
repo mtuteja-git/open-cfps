@@ -11,7 +11,9 @@
 <meta property="og:url" content="https://cfps.manvikatuteja.com/">
 <meta property="og:site_name" content="cfps.manvikatuteja.com">
 <meta name="twitter:card" content="summary">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/svg+xml" href="cfp-icon.svg?v=3">
+<link rel="icon" type="image/png" sizes="32x32" href="cfp-icon-32.png?v=3">
+<link rel="apple-touch-icon" href="cfp-icon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -61,10 +63,8 @@
   /* Header */
   header { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding: 28px 0 18px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
   .brand h1 { margin: 0; font-size: 26px; font-weight: 600; letter-spacing: -0.01em; display: flex; align-items: center; gap: 10px; }
-  .mark { width: 30px; height: auto; overflow: visible; flex: none; }
-  .mark path { fill: none; stroke: var(--text); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-  .mark .lash { stroke-width: 1.2; }
-  .mark .pupil { fill: var(--accent); }
+  .mark { width: 24px; height: auto; overflow: visible; flex: none; }
+  .mark path, .mark rect { fill: none; stroke: var(--text); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
   .brand .note { margin: 6px 0 0; color: var(--faint); font-size: 12px; }
   .feeds { display: flex; gap: 8px; flex-wrap: wrap; }
   .feeds a { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 13px; }
@@ -159,7 +159,7 @@
 <div class="wrap">
   <header>
     <div class="brand">
-      <h1><svg class="mark" viewBox="0 0 26 16" aria-hidden="true"><path d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/><path class="lash" d="M7.3 11 L5.9 13.9 M13 11.8 L13 14.9 M18.7 11 L20.1 13.9"/><clipPath id="eyeclip"><path d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/></clipPath><circle class="pupil" clip-path="url(#eyeclip)" cx="13" cy="8" r="3.6"/></svg>Open CFPs</h1>
+      <h1><svg class="mark" viewBox="0 0 32 36" aria-hidden="true"><rect x="10" y="2" width="12" height="20" rx="6"/><path d="M12 8h8M12 11.5h8M12 15h8"/><path d="M6.5 15.5a9.5 9.5 0 0 0 19 0"/><path d="M16 25v8M10.5 33h11"/></svg>Open CFPs</h1>
       <p class="note">Calls for proposals still accepting talks. Updated every Monday, 7am Pacific.<span id="last"></span></p>
     </div>
     <nav class="feeds" aria-label="Subscribe">
