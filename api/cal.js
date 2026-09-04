@@ -35,7 +35,12 @@ module.exports = (req, res) => {
   if (topic) rows = rows.filter((r) => r.topics.some((t) => topic.includes(t)));
   if (country) rows = rows.filter((r) => country.includes(r.country));
 
-  const name = pick ? 'CFP deadlines (picked)' : topic ? 'CFP deadlines (' + topic.map((t) => data.topics[t] || t).join(', ') + ')' : 'CFP deadlines';
+  const short = (r) => r.name.split(' (')[0];
+  let name = 'CFP Deadlines';
+  if (pick && rows.length === 1) name = 'CFP Deadline - ' + short(rows[0]);
+  else if (pick && rows.length > 1) name = 'CFP Deadlines - ' + rows.slice(0, 2).map(short).join(', ') + (rows.length > 2 ? ' +' + (rows.length - 2) + ' more' : '');
+  else if (topic) name = 'CFP Deadlines - ' + topic.map((t) => data.topics[t] || t).join(', ');
+  else if (country) name = 'CFP Deadlines - ' + country.join(', ');
   const stamp = ymd(data.updated) + 'T070000Z';
   const lines = [
     'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Open CFPs//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
@@ -49,12 +54,12 @@ module.exports = (req, res) => {
       'DTSTAMP:' + stamp,
       'DTSTART;VALUE=DATE:' + ymd(r.close),
       'DTEND;VALUE=DATE:' + ymd(plusOne(r.close)),
-      'SUMMARY:' + esc('CFP closes: ' + r.name),
+      'SUMMARY:' + esc('CFP Deadline - ' + short(r)),
       'DESCRIPTION:' + esc('Event ' + when + ', ' + r.city + ', ' + r.country + '. Submit: ' + r.url),
       'LOCATION:' + esc(r.city + ', ' + r.country),
       'URL:' + r.url,
       'TRANSP:TRANSPARENT',
-      'BEGIN:VALARM', 'ACTION:DISPLAY', 'TRIGGER:-P3D', 'DESCRIPTION:' + esc('CFP closes in 3 days: ' + r.name), 'END:VALARM',
+      'BEGIN:VALARM', 'ACTION:DISPLAY', 'TRIGGER:-P3D', 'DESCRIPTION:' + esc('CFP Deadline in 3 days - ' + short(r)), 'END:VALARM',
       'END:VEVENT'
     );
   }
