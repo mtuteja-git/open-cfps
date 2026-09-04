@@ -1,0 +1,23 @@
+name: Suggest a CFP
+description: Know an open call for papers that belongs on the board?
+title: "CFP: "
+labels: [cfp]
+body:
+  - type: input
+    id: name
+    attributes: { label: Conference name }
+    validations: { required: true }
+  - type: input
+    id: url
+    attributes: { label: CFP page (the organiser's own submission page, not an aggregator) }
+    validations: { required: true }
+  - type: input
+    id: close
+    attributes: { label: CFP closes (YYYY-MM-DD) }
+    validations: { required: true }
+  - type: input
+    id: dates
+    attributes: { label: Event dates and city }
+  - type: textarea
+    id: notes
+    attributes: { label: Anything else }

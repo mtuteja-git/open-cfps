@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open CFPs</title>
+<meta name="description" content="Open calls for papers an engineer would actually submit to: open source, cloud native, databases, systems, AI infrastructure, agents and MCP. Updated every Monday.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%226%22 fill=%22%238C1D33%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-family=%22system-ui%22 font-size=%2216%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22%3ECFP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --panel: #F5F5F5;
+    --panel-2: #ECECEC;
+    --text: #1F1F1F;
+    --muted: #6B6B70;
+    --faint: #9A9A9E;
+    --border: #E2E2E5;
+    --accent: #8C1D33;
+    --accent-soft: #F6E9EC;
+    --link: #1A56B8;
+    --warn: #A65A0A;
+    --warn-soft: #FBF1E3;
+    --crit: #9A2F0B;
+    --crit-soft: #FAE8E1;
+    --new: #2F5E3F;
+    --new-soft: #E6F1EA;
+    --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #1E1E1E; --panel: #262626; --panel-2: #2E2E2E; --text: #DADADA; --muted: #A0A0A4; --faint: #7A7A7E;
+      --border: #363636; --accent: #E3697D; --accent-soft: #3A2226; --link: #7FB2FF; --warn: #F0B45E; --warn-soft: #3A2F1A;
+      --crit: #F28B66; --crit-soft: #3E2419; --new: #8FCB9F; --new-soft: #1F3326;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #1E1E1E; --panel: #262626; --panel-2: #2E2E2E; --text: #DADADA; --muted: #A0A0A4; --faint: #7A7A7E;
+    --border: #363636; --accent: #E3697D; --accent-soft: #3A2226; --link: #7FB2FF; --warn: #F0B45E; --warn-soft: #3A2F1A;
+    --crit: #F28B66; --crit-soft: #3E2419; --new: #8FCB9F; --new-soft: #1F3326;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 14px; line-height: 1.45; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px 56px; }
+
+  /* Header */
+  header { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; padding: 28px 0 18px; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+  .brand h1 { margin: 0; font-size: 26px; font-weight: 600; letter-spacing: -0.01em; }
+  .brand .note { margin: 6px 0 0; color: var(--faint); font-size: 12px; }
+  .feeds { display: flex; gap: 8px; flex-wrap: wrap; }
+  .feeds a { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 13px; }
+  .feeds a:hover { text-decoration: none; background: var(--panel); }
+  .feeds a span { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+
+  /* Closing strip */
+  .strip { margin-top: 22px; }
+  .strip-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 10px; }
+  .strip-head h2 { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--crit); }
+  .strip-head span { color: var(--muted); font-size: 13px; }
+  .strip-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+  .soon { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 14px; border-radius: 8px; background: var(--panel); border: 1px solid var(--border); border-left: 3px solid var(--crit); }
+  .soon .n { font-weight: 600; grid-column: 1; }
+  .soon .m { color: var(--muted); font-size: 13px; grid-column: 1; }
+  .soon .d { grid-column: 2; grid-row: 1 / span 2; align-self: center; text-align: right; font-family: var(--mono); font-size: 22px; font-weight: 500; color: var(--crit); line-height: 1; }
+  .soon .d small { display: block; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-top: 4px; font-family: var(--sans); }
+
+  /* Filters */
+  .filters { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; padding: 18px 0 14px; margin-top: 12px; border-top: 1px solid var(--border); position: sticky; top: 0; background: var(--bg); z-index: 2; }
+  .chip { padding: 6px 11px; border-radius: 999px; border: 1px solid var(--border); background: var(--bg); cursor: pointer; font-size: 13px; }
+  .chip:hover { background: var(--panel); }
+  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  :root[data-theme="dark"] .chip[aria-pressed="true"] { color: #1E1E1E; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .chip[aria-pressed="true"] { color: #1E1E1E; } }
+  .sep { width: 1px; height: 22px; background: var(--border); margin: 0 2px; }
+  select, input[type="search"] { font: inherit; font-size: 13px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px; }
+  input[type="search"] { min-width: 200px; margin-left: auto; }
+  .toggle { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 13px; padding: 6px 11px; border: 1px solid var(--border); border-radius: 999px; }
+  .toggle input { accent-color: var(--accent); margin: 0; }
+
+  .meta { display: flex; justify-content: space-between; align-items: baseline; color: var(--muted); font-size: 13px; margin: 6px 0 10px; }
+  .meta button { background: none; border: none; color: var(--accent); cursor: pointer; padding: 0; }
+
+  /* Table */
+  .tablewrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  thead th { text-align: left; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); padding: 10px 14px; background: var(--panel); border-bottom: 1px solid var(--border); white-space: nowrap; }
+  tbody td { padding: 12px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: var(--panel); }
+  td.conf .name { font-weight: 600; font-size: 15px; }
+  td.conf .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 5px; }
+  .tag { font-size: 11px; color: var(--muted); background: var(--panel-2); padding: 2px 7px; border-radius: 4px; }
+  .badge-new { font-size: 11px; font-weight: 600; color: var(--new); background: var(--new-soft); padding: 2px 7px; border-radius: 4px; letter-spacing: 0.04em; }
+  td.event { color: var(--muted); white-space: nowrap; }
+  td.event .when { font-family: var(--mono); font-size: 13px; color: var(--text); }
+  td.close { white-space: nowrap; }
+  td.close .date { font-family: var(--mono); font-size: 13px; }
+  .days { display: inline-block; margin-top: 4px; font-family: var(--mono); font-size: 12px; padding: 2px 8px; border-radius: 4px; background: var(--panel-2); color: var(--muted); }
+  .days.warn { background: var(--warn-soft); color: var(--warn); }
+  .days.crit { background: var(--crit-soft); color: var(--crit); font-weight: 500; }
+  td.submit a { font-family: var(--mono); font-size: 12.5px; word-break: break-all; color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+  .empty { padding: 40px; text-align: center; color: var(--muted); }
+  .pick { display: block; margin-top: 8px; padding: 3px 8px; font-size: 12px; border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: var(--muted); cursor: pointer; }
+  .pick:hover { background: var(--panel-2); color: var(--text); }
+  .pick[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .bar { position: fixed; left: 50%; bottom: 18px; transform: translateX(-50%); width: min(720px, calc(100% - 32px)); background: var(--text); color: var(--bg); border-radius: 10px; padding: 12px 16px; display: flex; gap: 10px 16px; align-items: center; flex-wrap: wrap; box-shadow: 0 8px 24px rgba(0,0,0,0.18); z-index: 5; font-size: 13px; }
+  .bar b { font-weight: 600; }
+  .bar .n { flex: 1; min-width: 200px; }
+  .bar .n small { display: block; opacity: 0.7; margin-top: 2px; }
+  .bar button { padding: 6px 12px; border-radius: 6px; border: 1px solid transparent; background: var(--bg); color: var(--text); cursor: pointer; font-weight: 500; }
+  .bar button.ghost { background: transparent; color: var(--bg); border-color: rgba(255,255,255,0.35); }
+  .toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 8px 14px; font-size: 13px; z-index: 6; }
+
+  footer { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  footer a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+
+  /* Phone */
+  @media (max-width: 720px) {
+    header { padding-top: 20px; }
+    .brand h1 { font-size: 22px; }
+    input[type="search"] { margin-left: 0; width: 100%; }
+    .tablewrap { border: none; overflow: visible; }
+    thead { display: none; }
+    table, tbody, tr, td { display: block; }
+    tr { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; padding: 4px 0; }
+    tbody td { border: none; padding: 6px 14px; }
+    tbody tr:hover td { background: transparent; }
+    td.event, td.close { white-space: normal; }
+    td.close { display: flex; align-items: center; gap: 10px; }
+    .days { margin-top: 0; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .chip, .feeds a { transition: background 120ms ease; }
+  }
+  body { margin: 0; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <h1>Open CFPs</h1>
+      <p class="note">Updated every Monday, 7am Pacific.<span id="last"></span></p>
+    </div>
+    <nav class="feeds" aria-label="Subscribe">
+      <a href="#" id="cal-all" title="Every deadline on this page, in your calendar, kept current each Monday">Add all to my calendar</a>
+      <a href="https://github.com/mtuteja-git/open-cfps/issues/new?template=cfp.yml" target="_blank" rel="noopener" title="Open an issue on GitHub">Suggest a CFP</a>
+    </nav>
+  </header>
+
+  <section class="strip" id="strip" aria-labelledby="strip-h">
+    <div class="strip-head"><h2 id="strip-h">Closing this week</h2><span id="strip-sub"></span></div>
+    <div class="strip-row" id="strip-row"></div>
+  </section>
+
+  <div class="filters" role="group" aria-label="Filters">
+    <div id="topics" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+    <div class="sep" aria-hidden="true"></div>
+    <select id="country" aria-label="Country"><option value="">All countries</option></select>
+    <label class="toggle"><input type="checkbox" id="soon"> Closing within 14 days</label>
+    <input type="search" id="q" placeholder="Search conference or city" aria-label="Search">
+  </div>
+
+  <div class="meta"><span id="count"></span><button id="reset" type="button">Clear filters</button></div>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr>
+        <th>Conference</th><th>Event</th><th>CFP closes</th><th>Submit</th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div class="empty" id="empty" hidden>Nothing matches. Clear a filter or two.</div>
+  </div>
+
+  <div class="bar" id="bar" hidden>
+    <span class="n"><b id="bar-count"></b><small>Only the deadlines you picked are added to your calendar. They keep updating each Monday if a date changes.</small></span>
+    <button type="button" id="bar-add">Add picked to my calendar</button>
+    <button type="button" class="ghost" id="bar-copy" title="For Google Calendar: paste this under Other calendars, From URL">Copy link</button>
+    <button type="button" class="ghost" id="bar-clear">Clear</button>
+  </div>
+  <div class="toast" id="toast" hidden></div>
+
+  <footer>
+    <span>Maintained by <a href="https://manvikatuteja.com">Manvika Tuteja</a>. Every deadline is checked against the organiser's own CFP page, not an aggregator.</span>
+    <span><a href="data/cfps.json">Data (JSON)</a> &nbsp;·&nbsp; <a href="https://github.com/mtuteja-git/open-cfps">Source on GitHub</a></span>
+  </footer>
+</div>
+
+<script>
+  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const d = s => new Date(s + 'T00:00:00');
+  const fmt = s => { const x = d(s); return MONTHS[x.getMonth()] + ' ' + x.getDate(); };
+  const fmtRange = (a, b) => {
+    const A = d(a), B = d(b);
+    if (a === b) return MONTHS[A.getMonth()] + ' ' + A.getDate() + ', ' + A.getFullYear();
+    if (A.getMonth() === B.getMonth()) return MONTHS[A.getMonth()] + ' ' + A.getDate() + ' to ' + B.getDate() + ', ' + A.getFullYear();
+    return fmt(a) + ' to ' + fmt(b) + ', ' + B.getFullYear();
+  };
+  const strip = u => u.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const feedBase = () => (location.protocol === 'https:' ? 'webcal://' : 'http://') + location.host + '/cal.ics';
+
+  const $ = id => document.getElementById(id);
+  const toastEl = $('toast'); let toastTimer;
+  function toast(msg) { toastEl.textContent = msg; toastEl.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { toastEl.hidden = true; }, 4000); }
+
+  async function main() {
+    const res = await fetch('data/cfps.json', { cache: 'no-cache' });
+    if (!res.ok) { $('rows').innerHTML = ''; $('empty').hidden = false; $('empty').textContent = 'Could not load the CFP list. Try again in a minute.'; return; }
+    const data = await res.json();
+    const TOPICS = data.topics;
+    const now = new Date(); const TODAY = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const daysLeft = s => Math.round((d(s) - TODAY) / 86400000);
+
+    const rows = data.cfps.map(r => ({ ...r, days: daysLeft(r.close), isNew: r.added === data.updated })).filter(r => r.days >= 0).sort((a, b) => a.days - b.days || a.name.localeCompare(b.name));
+    const countries = new Set(rows.map(r => r.country));
+    $('last').textContent = ' Last update ' + fmt(data.updated) + ', ' + d(data.updated).getFullYear() + '.';
+    $('cal-all').href = feedBase();
+
+    // Closing strip
+    const soon = rows.filter(r => r.days <= 7);
+    $('strip-sub').textContent = soon.length ? soon.length + (soon.length === 1 ? ' deadline' : ' deadlines') + ' in the next 7 days' : 'Nothing closes in the next 7 days';
+    $('strip-row').innerHTML = soon.map(r =>
+      '<a class="soon" href="' + esc(r.url) + '" target="_blank" rel="noopener" style="color:inherit">' +
+      '<span class="n">' + esc(r.name) + '</span><span class="m">' + esc(r.city) + ' · closes ' + fmt(r.close) + '</span>' +
+      '<span class="d">' + r.days + '<small>' + (r.days === 1 ? 'day' : 'days') + '</small></span></a>').join('');
+
+    // Filters
+    const state = { topics: new Set(), country: '', soon: false, q: '' };
+    const topicsEl = $('topics');
+    Object.entries(TOPICS).forEach(([k, label]) => {
+      const b = document.createElement('button'); b.className = 'chip'; b.type = 'button'; b.textContent = label; b.setAttribute('aria-pressed', 'false');
+      b.onclick = () => { state.topics.has(k) ? state.topics.delete(k) : state.topics.add(k); b.setAttribute('aria-pressed', state.topics.has(k)); render(); };
+      topicsEl.appendChild(b);
+    });
+    const countryEl = $('country');
+    [...countries].sort().forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; countryEl.appendChild(o); });
+    countryEl.onchange = () => { state.country = countryEl.value; render(); };
+    const soonEl = $('soon'); soonEl.onchange = () => { state.soon = soonEl.checked; render(); };
+    const qEl = $('q'); qEl.oninput = () => { state.q = qEl.value.trim().toLowerCase(); render(); };
+    $('reset').onclick = () => {
+      state.topics.clear(); state.country = ''; state.soon = false; state.q = '';
+      topicsEl.querySelectorAll('.chip').forEach(b => b.setAttribute('aria-pressed', 'false'));
+      countryEl.value = ''; soonEl.checked = false; qEl.value = ''; render();
+    };
+
+    // Picking deadlines for the calendar
+    const picked = new Set();
+    const pickUrl = () => feedBase() + '?pick=' + [...picked].join(',');
+    function updateBar() {
+      $('bar').hidden = picked.size === 0;
+      $('bar-count').textContent = picked.size + (picked.size === 1 ? ' deadline picked' : ' deadlines picked');
+    }
+    $('rows').addEventListener('click', e => {
+      const b = e.target.closest('.pick'); if (!b) return;
+      const id = b.dataset.id;
+      picked.has(id) ? picked.delete(id) : picked.add(id);
+      b.setAttribute('aria-pressed', picked.has(id)); b.textContent = picked.has(id) ? 'Picked for calendar' : 'Add to calendar';
+      updateBar();
+    });
+    $('bar-clear').onclick = () => { picked.clear(); updateBar(); render(); };
+    $('bar-add').onclick = () => { location.href = pickUrl(); };
+    $('bar-copy').onclick = async () => {
+      const url = pickUrl().replace(/^webcal:/, 'https:');
+      try { await navigator.clipboard.writeText(url); toast('Link copied. In Google Calendar: Other calendars, From URL, paste.'); }
+      catch (err) { prompt('Copy this link', url); }
+    };
+
+    function render() {
+      const vis = rows.filter(r =>
+        (!state.topics.size || r.topics.some(t => state.topics.has(t))) &&
+        (!state.country || r.country === state.country) &&
+        (!state.soon || r.days <= 14) &&
+        (!state.q || (r.name + ' ' + r.city + ' ' + r.country).toLowerCase().includes(state.q)));
+      $('count').textContent = vis.length === rows.length ? rows.length + ' open CFPs, soonest deadline first' : vis.length + ' of ' + rows.length + ' shown';
+      $('empty').hidden = vis.length > 0;
+      $('rows').innerHTML = vis.map(r => {
+        const cls = r.days <= 7 ? 'days crit' : r.days <= 14 ? 'days warn' : 'days';
+        const tags = r.topics.map(t => '<span class="tag">' + esc(TOPICS[t] || t) + '</span>').join('') + (r.isNew ? '<span class="badge-new">New this week</span>' : '');
+        return '<tr>' +
+          '<td class="conf"><div class="name">' + esc(r.name) + '</div><div class="tags">' + tags + '</div></td>' +
+          '<td class="event"><div class="when">' + fmtRange(r.start, r.end) + '</div><div>' + esc(r.city) + (r.country !== r.city ? ', ' + esc(r.country) : '') + '</div></td>' +
+          '<td class="close"><div class="date">' + fmt(r.close) + ', ' + d(r.close).getFullYear() + '</div><span class="' + cls + '">' + (r.days === 0 ? 'today' : r.days + (r.days === 1 ? ' day' : ' days')) + '</span>' +
+          '<button type="button" class="pick" data-id="' + esc(r.id) + '" aria-pressed="' + picked.has(r.id) + '">' + (picked.has(r.id) ? 'Picked for calendar' : 'Add to calendar') + '</button></td>' +
+          '<td class="submit"><a href="' + esc(r.url) + '" target="_blank" rel="noopener">' + esc(strip(r.url)) + '</a></td>' +
+        '</tr>';
+      }).join('');
+    }
+    render();
+  }
+  main().catch(err => { $('empty').hidden = false; $('empty').textContent = 'Something went wrong loading the list: ' + err.message; });
+</script>
+</body>
+</html>
