@@ -28,10 +28,10 @@
     --accent: #8C1D33;
     --accent-soft: #F6E9EC;
     --link: #1A56B8;
-    --warn: #A65A0A;
-    --warn-soft: #FBF1E3;
-    --crit: #9A2F0B;
-    --crit-soft: #FAE8E1;
+    --warn: #7A6100;
+    --warn-soft: #FBF3CC;
+    --crit: #A3243A;
+    --crit-soft: #F8E6EA;
     --new: #2F5E3F;
     --new-soft: #E6F1EA;
     --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -40,14 +40,14 @@
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --bg: #1E1E1E; --panel: #262626; --panel-2: #2E2E2E; --text: #DADADA; --muted: #A0A0A4; --faint: #7A7A7E;
-      --border: #363636; --accent: #E3697D; --accent-soft: #3A2226; --link: #7FB2FF; --warn: #F0B45E; --warn-soft: #3A2F1A;
-      --crit: #F28B66; --crit-soft: #3E2419; --new: #8FCB9F; --new-soft: #1F3326;
+      --border: #363636; --accent: #E3697D; --accent-soft: #3A2226; --link: #7FB2FF; --warn: #E6C84A; --warn-soft: #3A3418;
+      --crit: #E3697D; --crit-soft: #3A2226; --new: #8FCB9F; --new-soft: #1F3326;
     }
   }
   :root[data-theme="dark"] {
     --bg: #1E1E1E; --panel: #262626; --panel-2: #2E2E2E; --text: #DADADA; --muted: #A0A0A4; --faint: #7A7A7E;
-    --border: #363636; --accent: #E3697D; --accent-soft: #3A2226; --link: #7FB2FF; --warn: #F0B45E; --warn-soft: #3A2F1A;
-    --crit: #F28B66; --crit-soft: #3E2419; --new: #8FCB9F; --new-soft: #1F3326;
+    --border: #363636; --accent: #E3697D; --accent-soft: #3A2226; --link: #7FB2FF; --warn: #E6C84A; --warn-soft: #3A3418;
+    --crit: #E3697D; --crit-soft: #3A2226; --new: #8FCB9F; --new-soft: #1F3326;
   }
 
   * { box-sizing: border-box; }
@@ -70,6 +70,19 @@
   .feeds a { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-size: 13px; }
   .feeds a:hover { text-decoration: none; background: var(--panel); }
   .feeds a span { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+  /* light = eyes open, dark = eyes shut */
+  #pill { display: flex; align-items: center; gap: 6px; border: 0; background: none; padding: 8px 6px; margin-right: 6px; cursor: pointer; line-height: 0; }
+  #pill .eye { display: block; width: 22px; }
+  #pill svg { display: block; width: 100%; height: auto; overflow: visible; }
+  #pill path { fill: none; stroke: var(--text); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; transition: opacity .17s ease, stroke .25s ease; }
+  #pill .s { opacity: 0; }
+  #pill .lash { stroke-width: 1.2; }
+  #pill .p { fill: var(--text); transition: opacity .12s ease, fill .25s ease; }
+  #pill.shut .o, #pill.wink .o { opacity: 0; }
+  #pill.shut .s, #pill.wink .s { opacity: 1; }
+  #pill.shut .p, #pill.wink .p { opacity: 0; }
+  #pill:hover path { stroke: var(--accent); }
+  #pill:hover .p { fill: var(--accent); }
 
   /* Closing strip */
   .strip { margin-top: 22px; }
@@ -156,6 +169,7 @@
 </head>
 <body>
 
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs><clipPath id="eyeclip"><path d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/></clipPath></defs></svg>
 <div class="wrap">
   <header>
     <div class="brand">
@@ -163,6 +177,7 @@
       <p class="note">Calls for proposals still accepting talks. Updated every Monday, 7am Pacific.<span id="last"></span></p>
     </div>
     <nav class="feeds" aria-label="Subscribe">
+      <button id="pill" type="button" aria-pressed="false" aria-label="Eyes open for light, shut for dark" title="Open / shut"><span class="eye"><svg viewBox="0 0 26 16" aria-hidden="true"><path class="o" d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/><path class="s" d="M2 8 C6.5 13 19.5 13 24 8"/><path class="s lash" d="M7.3 11 L5.9 13.9 M13 11.8 L13 14.9 M18.7 11 L20.1 13.9"/><circle class="p" clip-path="url(#eyeclip)" cx="13" cy="8" r="3.6"/></svg></span><span class="eye"><svg viewBox="0 0 26 16" aria-hidden="true"><path class="o" d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/><path class="s" d="M2 8 C6.5 13 19.5 13 24 8"/><path class="s lash" d="M7.3 11 L5.9 13.9 M13 11.8 L13 14.9 M18.7 11 L20.1 13.9"/><circle class="p" clip-path="url(#eyeclip)" cx="13" cy="8" r="3.6"/></svg></span></button>
       <a href="#" id="cal-all" title="Every deadline on this page, in your calendar, kept current each Monday">Add all to my calendar</a>
       <a href="#" id="cal-all-copy" title="For Google Calendar: paste this under Other calendars, From URL">Copy calendar link</a>
       <a href="https://github.com/mtuteja-git/open-cfps/issues/new?template=cfp.yml" target="_blank" rel="noopener" title="Open an issue on GitHub">Suggest a CFP</a>
@@ -223,6 +238,43 @@
   const feedBase = () => (location.protocol === 'https:' ? 'webcal://' : 'http://') + location.host + '/cal.ics';
 
   const $ = id => document.getElementById(id);
+
+  // The eyes: open for light, shut for dark. Same eyes as manvikatuteja.com.
+  (function () {
+    const root = document.documentElement, pill = $('pill');
+    const eyes = [...pill.querySelectorAll('.eye')], pupils = [...pill.querySelectorAll('.p')];
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let shut = false, winking = false, blinkTimer = null, mx = -9999, my = -9999, eyeC = [];
+    let saved = null; try { saved = localStorage.getItem('cfps-theme'); } catch (e) {}
+    function setTheme(dark, persist) {
+      shut = dark;
+      root.setAttribute('data-theme', dark ? 'dark' : 'light');
+      pill.classList.toggle('shut', dark);
+      pill.setAttribute('aria-pressed', String(dark));
+      if (dark) clearTimeout(blinkTimer); else scheduleBlink();
+      if (persist) { try { localStorage.setItem('cfps-theme', dark ? 'dark' : 'light'); } catch (e) {} }
+    }
+    function blink() { if (shut || winking) return; winking = true; pill.classList.add('wink'); setTimeout(() => { pill.classList.remove('wink'); winking = false; }, 120); }
+    function scheduleBlink() { clearTimeout(blinkTimer); if (reduce) return; blinkTimer = setTimeout(() => { blink(); scheduleBlink(); }, 3200 + Math.random() * 4200); }
+    pill.addEventListener('click', () => { pill.classList.add('wink'); setTimeout(() => { pill.classList.remove('wink'); setTheme(!shut, true); }, 120); });
+    function measureEyes() { eyeC = eyes.map(e => { const b = e.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; }); }
+    function trackEyes() {
+      if (shut || !eyeC.length) return;
+      pupils.forEach((p, i) => {
+        const c = eyeC[i]; if (!c) return;
+        const dx = mx - c.x, dy = my - c.y, d = Math.sqrt(dx * dx + dy * dy);
+        if (mx < -999 || d < 1) { p.setAttribute('cx', 13); p.setAttribute('cy', 8); return; }
+        const k = Math.min(1, d / 190);
+        p.setAttribute('cx', (13 + (dx / d) * 2.7 * k).toFixed(2)); p.setAttribute('cy', (8 + (dy / d) * 1.5 * k).toFixed(2));
+      });
+    }
+    if (!reduce) {
+      addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; trackEyes(); }, { passive: true });
+      addEventListener('resize', measureEyes); addEventListener('scroll', measureEyes, { passive: true });
+      measureEyes();
+    }
+    setTheme(saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches, false);
+  })();
   const toastEl = $('toast'); let toastTimer;
   function toast(msg) { toastEl.textContent = msg; toastEl.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { toastEl.hidden = true; }, 4000); }
 
