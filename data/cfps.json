@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-03",
+  "updated": "2026-09-08",
   "topics": {
     "ai": "AI infra",
     "ag": "Agents & MCP",
@@ -11,35 +11,6 @@
     "dev": "Developer tooling"
   },
   "cfps": [
-    {
-      "id": "devopsdays-philadelphia",
-      "name": "devopsdays Philadelphia",
-      "topics": [
-        "sre",
-        "cn"
-      ],
-      "city": "Philadelphia",
-      "country": "United States",
-      "start": "2026-10-01",
-      "end": "2026-10-02",
-      "close": "2026-09-04",
-      "url": "https://forms.gle/DUQu4fgwyWUtseQw5",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "kcd-florida",
-      "name": "KCD Florida",
-      "topics": [
-        "cn"
-      ],
-      "city": "Miami",
-      "country": "United States",
-      "start": "2026-12-11",
-      "end": "2026-12-11",
-      "close": "2026-09-06",
-      "url": "https://sessionize.com/kcd-florida-2026",
-      "added": "2026-09-02"
-    },
     {
       "id": "usenix-nsdi-27",
       "name": "USENIX NSDI 27",
@@ -85,6 +56,20 @@
       "added": "2026-09-02"
     },
     {
+      "id": "kcd-provence",
+      "name": "KCD Provence",
+      "topics": [
+        "cn"
+      ],
+      "city": "Aix-en-Provence",
+      "country": "France",
+      "start": "2026-12-10",
+      "end": "2026-12-10",
+      "close": "2026-09-13",
+      "url": "https://conference-hall.io/kcd-provence-2026",
+      "added": "2026-09-02"
+    },
+    {
       "id": "usenix-fast-27",
       "name": "USENIX FAST 27",
       "topics": [
@@ -98,6 +83,21 @@
       "close": "2026-09-16",
       "url": "https://usenix.org/conference/fast27/call-for-papers",
       "added": "2026-09-02"
+    },
+    {
+      "id": "devopsdays-brasilia",
+      "name": "devopsdays Brasilia",
+      "topics": [
+        "sre",
+        "cn"
+      ],
+      "city": "Brasilia",
+      "country": "Brazil",
+      "start": "2026-11-14",
+      "end": "2026-11-14",
+      "close": "2026-09-17",
+      "url": "https://cfp.ninja/e/devops-days-braslia-2026",
+      "added": "2026-09-08"
     },
     {
       "id": "ai-devworld",
@@ -115,6 +115,51 @@
       "added": "2026-09-02"
     },
     {
+      "id": "cloud-native-ai-summit-europe",
+      "name": "Cloud Native AI Summit Europe",
+      "topics": [
+        "ai",
+        "cn"
+      ],
+      "city": "Paris",
+      "country": "France",
+      "start": "2026-12-02",
+      "end": "2026-12-03",
+      "close": "2026-09-18",
+      "url": "https://sessionize.com/cloud-native-summit-europe-2026",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "kcd-budapest",
+      "name": "KCD Budapest",
+      "topics": [
+        "cn"
+      ],
+      "city": "Budapest",
+      "country": "Hungary",
+      "start": "2026-10-30",
+      "end": "2026-10-30",
+      "close": "2026-09-18",
+      "url": "https://sessionize.com/kcd-budapest-2026",
+      "added": "2026-09-02"
+    },
+    {
+      "id": "monster-scale-summit-2027",
+      "name": "Monster Scale Summit 2027",
+      "topics": [
+        "db",
+        "sys",
+        "sre"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-03-10",
+      "end": "2027-03-11",
+      "close": "2026-09-18",
+      "url": "https://sessionize.com/monster-scale-summit-2027",
+      "added": "2026-09-08"
+    },
+    {
       "id": "confoo-montreal",
       "name": "ConFoo Montreal",
       "topics": [
@@ -130,77 +175,18 @@
       "added": "2026-09-02"
     },
     {
-      "id": "scale-24x-devopsdays-los-angeles",
-      "name": "SCaLE 24x + devopsdays Los Angeles (one shared CFP)",
+      "id": "everything-open-2027",
+      "name": "Everything Open 2027",
       "topics": [
         "oss",
-        "sys",
-        "sre"
+        "sys"
       ],
-      "city": "Pasadena",
-      "country": "United States",
-      "start": "2027-04-01",
-      "end": "2027-04-04",
-      "close": "2026-11-01",
-      "url": "https://socallinuxexpo.org/scale/24x/cfp",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "usenix-osdi-27",
-      "name": "USENIX OSDI 27",
-      "topics": [
-        "sys",
-        "ai"
-      ],
-      "city": "Baltimore",
-      "country": "United States",
-      "start": "2027-07-07",
-      "end": "2027-07-09",
-      "close": "2026-12-01",
-      "url": "https://usenix.org/conference/osdi27/call-for-papers",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "devopsdays-raleigh",
-      "name": "devopsdays Raleigh",
-      "topics": [
-        "sre",
-        "cn"
-      ],
-      "city": "Raleigh",
-      "country": "United States",
-      "start": "2027-04-27",
-      "end": "2027-04-28",
-      "close": "2027-01-01",
-      "url": "https://devopsdays.org/events/2027-raleigh/propose",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "kcd-budapest",
-      "name": "KCD Budapest",
-      "topics": [
-        "cn"
-      ],
-      "city": "Budapest",
-      "country": "Hungary",
-      "start": "2026-10-30",
-      "end": "2026-10-30",
-      "close": "2026-09-11",
-      "url": "https://sessionize.com/kcd-budapest-2026",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "kcd-provence",
-      "name": "KCD Provence",
-      "topics": [
-        "cn"
-      ],
-      "city": "Aix-en-Provence",
-      "country": "France",
-      "start": "2026-12-10",
-      "end": "2026-12-10",
-      "close": "2026-09-13",
-      "url": "https://conference-hall.io/kcd-provence-2026",
+      "city": "Brisbane",
+      "country": "Australia",
+      "start": "2027-01-20",
+      "end": "2027-01-22",
+      "close": "2026-09-20",
+      "url": "https://2027.everythingopen.au/programme/proposals",
       "added": "2026-09-02"
     },
     {
@@ -217,6 +203,138 @@
       "close": "2026-09-25",
       "url": "https://in10t.ai/cfp/devopsdays-tlv-2026",
       "added": "2026-09-02"
+    },
+    {
+      "id": "ai-dev-tlv-2026",
+      "name": "AI Dev TLV 26",
+      "topics": [
+        "ai",
+        "dev"
+      ],
+      "city": "Tel Aviv",
+      "country": "Israel",
+      "start": "2026-12-21",
+      "end": "2026-12-21",
+      "close": "2026-09-26",
+      "url": "https://sessionize.com/ai-dev-tlv-26",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "pytorch-day-japan",
+      "name": "PyTorch Day Japan",
+      "topics": [
+        "ai"
+      ],
+      "city": "Tokyo",
+      "country": "Japan",
+      "start": "2026-12-10",
+      "end": "2026-12-10",
+      "close": "2026-09-27",
+      "url": "https://sessionize.com/pytorch-day-japan-2026",
+      "added": "2026-09-02"
+    },
+    {
+      "id": "apache-doris-summit-2026",
+      "name": "Apache Doris Summit 2026",
+      "topics": [
+        "db",
+        "oss"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2026-10-21",
+      "end": "2026-10-22",
+      "close": "2026-09-29",
+      "url": "https://sessionize.com/apache-doris-summit-2026",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "agent-substrate-day",
+      "name": "Agent Substrate Day",
+      "topics": [
+        "ag",
+        "ai",
+        "cn"
+      ],
+      "city": "Salt Lake City",
+      "country": "United States",
+      "start": "2026-11-09",
+      "end": "2026-11-09",
+      "close": "2026-09-30",
+      "url": "https://sessionize.com/agent-substrate-day-2026",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "gids",
+      "name": "GIDS (Great International Developer Summit)",
+      "topics": [
+        "dev",
+        "oss"
+      ],
+      "city": "Bengaluru",
+      "country": "India",
+      "start": "2027-04-27",
+      "end": "2027-04-30",
+      "close": "2026-09-30",
+      "url": "https://developersummit.com/cfp",
+      "added": "2026-09-02"
+    },
+    {
+      "id": "kcd-suisse-romande",
+      "name": "KCD Suisse Romande",
+      "topics": [
+        "cn"
+      ],
+      "city": "Geneva",
+      "country": "Switzerland",
+      "start": "2026-12-09",
+      "end": "2026-12-10",
+      "close": "2026-09-30",
+      "url": "https://sessionize.com/kcd-suisse-romande-2026",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "ubucon-india",
+      "name": "UbuCon India",
+      "topics": [
+        "oss",
+        "sys"
+      ],
+      "city": "Bengaluru",
+      "country": "India",
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "close": "2026-09-30",
+      "url": "https://events.canonical.com/event/157/abstracts",
+      "added": "2026-09-02"
+    },
+    {
+      "id": "aamas-27",
+      "name": "AAMAS 27",
+      "topics": [
+        "ag"
+      ],
+      "city": "Hanoi",
+      "country": "Vietnam",
+      "start": "2027-05-03",
+      "end": "2027-05-07",
+      "close": "2026-10-01",
+      "url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls",
+      "added": "2026-09-02"
+    },
+    {
+      "id": "ipdps-2027",
+      "name": "IPDPS 2027",
+      "topics": [
+        "sys"
+      ],
+      "city": "Seattle",
+      "country": "United States",
+      "start": "2027-06-01",
+      "end": "2027-06-05",
+      "close": "2026-10-01",
+      "url": "https://www.ipdps.org/ipdps2027/2027-call-for-papers.html",
+      "added": "2026-09-08"
     },
     {
       "id": "openfest",
@@ -244,112 +362,7 @@
       "start": "2026-11-02",
       "end": "2026-11-02",
       "close": "2026-10-01",
-      "url": "https://papercall.io/sreday-amsterdam-2026-q4",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "kubecon-cloudnativecon-europe-2027",
-      "name": "KubeCon + CloudNativeCon Europe 2027",
-      "topics": [
-        "cn",
-        "ai"
-      ],
-      "city": "Barcelona",
-      "country": "Spain",
-      "start": "2027-03-15",
-      "end": "2027-03-18",
-      "close": "2026-10-11",
-      "url": "https://sessionize.com/kubecon-cloudnativecon-europe-2027",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "cncf-co-located-events-europe-2027",
-      "name": "CNCF co-located events Europe 2027 (13 events, one form: Cloud Native AI + Inference Day, Agentics Day, Observability Day, ArgoCon, CiliumCon, Platform Engineering Day, more)",
-      "topics": [
-        "cn",
-        "ai",
-        "ag",
-        "sre"
-      ],
-      "city": "Barcelona",
-      "country": "Spain",
-      "start": "2027-03-15",
-      "end": "2027-03-15",
-      "close": "2026-10-18",
-      "url": "https://sessionize.com/cncf-hosted-co-located-events-europe-2027",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "cern-pgday",
-      "name": "CERN PGDay",
-      "topics": [
-        "db"
-      ],
-      "city": "Geneva",
-      "country": "Switzerland",
-      "start": "2027-02-12",
-      "end": "2027-02-12",
-      "close": "2026-11-11",
-      "url": "https://indico.cern.ch/event/1720940/abstracts",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "everything-open-2027",
-      "name": "Everything Open 2027",
-      "topics": [
-        "oss",
-        "sys"
-      ],
-      "city": "Brisbane",
-      "country": "Australia",
-      "start": "2027-01-20",
-      "end": "2027-01-22",
-      "close": "2026-09-06",
-      "url": "https://2027.everythingopen.au/programme/proposals",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "pytorch-day-japan",
-      "name": "PyTorch Day Japan",
-      "topics": [
-        "ai"
-      ],
-      "city": "Tokyo",
-      "country": "Japan",
-      "start": "2026-12-10",
-      "end": "2026-12-10",
-      "close": "2026-09-27",
-      "url": "https://sessionize.com/pytorch-day-japan-2026",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "ubucon-india",
-      "name": "UbuCon India",
-      "topics": [
-        "oss",
-        "sys"
-      ],
-      "city": "Bengaluru",
-      "country": "India",
-      "start": "2026-11-14",
-      "end": "2026-11-15",
-      "close": "2026-09-30",
-      "url": "https://events.canonical.com/event/157/abstracts",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "gids",
-      "name": "GIDS (Great International Developer Summit)",
-      "topics": [
-        "dev",
-        "oss"
-      ],
-      "city": "Bengaluru",
-      "country": "India",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "close": "2026-09-30",
-      "url": "https://developersummit.com/cfp",
+      "url": "https://cfp.ninja/e/sreday-2026-amsterdam-q4",
       "added": "2026-09-02"
     },
     {
@@ -368,18 +381,218 @@
       "added": "2026-09-02"
     },
     {
-      "id": "aamas-27",
-      "name": "AAMAS 27",
+      "id": "agentcon-singapore",
+      "name": "AgentCon Singapore",
       "topics": [
-        "ag"
+        "ag",
+        "ai"
       ],
-      "city": "Hanoi",
-      "country": "Vietnam",
-      "start": "2027-05-03",
-      "end": "2027-05-07",
-      "close": "2026-10-01",
-      "url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls",
+      "city": "Singapore",
+      "country": "Singapore",
+      "start": "2026-11-05",
+      "end": "2026-11-05",
+      "close": "2026-10-04",
+      "url": "https://sessionize.com/agentcon-singapore",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "platformcon-live-san-francisco",
+      "name": "PlatformCon Live Day San Francisco",
+      "topics": [
+        "cn",
+        "dev"
+      ],
+      "city": "San Francisco",
+      "country": "United States",
+      "start": "2027-02-24",
+      "end": "2027-02-24",
+      "close": "2026-10-04",
+      "url": "https://sessionize.com/platformcon-live-day-san-francisco",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "aie-code-summit-sf",
+      "name": "AI Engineer CODE Summit SF",
+      "topics": [
+        "ai",
+        "ag",
+        "dev"
+      ],
+      "city": "San Francisco",
+      "country": "United States",
+      "start": "2026-11-10",
+      "end": "2026-11-12",
+      "close": "2026-10-11",
+      "url": "https://sessionize.com/aiecode26",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "kubecon-cloudnativecon-europe-2027",
+      "name": "KubeCon + CloudNativeCon Europe 2027",
+      "topics": [
+        "cn",
+        "ai"
+      ],
+      "city": "Barcelona",
+      "country": "Spain",
+      "start": "2027-03-15",
+      "end": "2027-03-18",
+      "close": "2026-10-11",
+      "url": "https://sessionize.com/kubecon-cloudnativecon-europe-2027",
       "added": "2026-09-02"
+    },
+    {
+      "id": "pgconf-india-2027",
+      "name": "PGConf India 2027",
+      "topics": [
+        "db",
+        "oss"
+      ],
+      "city": "Bengaluru",
+      "country": "India",
+      "start": "2027-03-02",
+      "end": "2027-03-05",
+      "close": "2026-10-15",
+      "url": "https://pgconf.in/cfp",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "cncf-co-located-events-europe-2027",
+      "name": "CNCF co-located events Europe 2027 (13 events, one form: Cloud Native AI + Inference Day, Agentics Day, Observability Day, ArgoCon, CiliumCon, KeyCloakCon, Platform Engineering Day, more)",
+      "topics": [
+        "cn",
+        "ai",
+        "ag",
+        "sre"
+      ],
+      "city": "Barcelona",
+      "country": "Spain",
+      "start": "2027-03-15",
+      "end": "2027-03-15",
+      "close": "2026-10-18",
+      "url": "https://sessionize.com/cncf-hosted-co-located-events-europe-2027",
+      "added": "2026-09-02"
+    },
+    {
+      "id": "keycloak-devday-2027",
+      "name": "Keycloak DevDay 2027",
+      "topics": [
+        "oss",
+        "dev"
+      ],
+      "city": "Darmstadt",
+      "country": "Germany",
+      "start": "2027-04-08",
+      "end": "2027-04-09",
+      "close": "2026-10-24",
+      "url": "https://sessionize.com/keycloak-devday-2027",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "scale-24x-devopsdays-los-angeles",
+      "name": "SCaLE 24x + devopsdays Los Angeles (one shared CFP)",
+      "topics": [
+        "oss",
+        "sys",
+        "sre"
+      ],
+      "city": "Pasadena",
+      "country": "United States",
+      "start": "2027-04-01",
+      "end": "2027-04-04",
+      "close": "2026-11-01",
+      "url": "https://socallinuxexpo.org/scale/24x/cfp",
+      "added": "2026-09-02"
+    },
+    {
+      "id": "usenix-srecon27-americas",
+      "name": "USENIX SREcon27 Americas",
+      "topics": [
+        "sre",
+        "sys"
+      ],
+      "city": "Seattle",
+      "country": "United States",
+      "start": "2027-04-12",
+      "end": "2027-04-14",
+      "close": "2026-11-19",
+      "url": "https://www.usenix.org/conference/srecon27americas/call-for-participation",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "usenix-osdi-27",
+      "name": "USENIX OSDI 27",
+      "topics": [
+        "sys",
+        "ai"
+      ],
+      "city": "Baltimore",
+      "country": "United States",
+      "start": "2027-07-07",
+      "end": "2027-07-09",
+      "close": "2026-12-01",
+      "url": "https://usenix.org/conference/osdi27/call-for-papers",
+      "added": "2026-09-02"
+    },
+    {
+      "id": "incontro-devops-italia-2027",
+      "name": "Incontro DevOps Italia 2027",
+      "topics": [
+        "sre",
+        "dev"
+      ],
+      "city": "Bologna",
+      "country": "Italy",
+      "start": "2027-03-09",
+      "end": "2027-03-09",
+      "close": "2026-12-13",
+      "url": "https://sessionize.com/incontro-devops-italia-idi-2027",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "containerdays-ai-context-warsaw",
+      "name": "ContainerDays AI Context Warsaw 2027",
+      "topics": [
+        "cn",
+        "ai"
+      ],
+      "city": "Warsaw",
+      "country": "Poland",
+      "start": "2027-02-21",
+      "end": "2027-02-23",
+      "close": "2026-12-15",
+      "url": "https://sessionize.com/containerdays-ai-context-warsaw-2027",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "devopsdays-raleigh",
+      "name": "devopsdays Raleigh",
+      "topics": [
+        "sre",
+        "cn"
+      ],
+      "city": "Raleigh",
+      "country": "United States",
+      "start": "2027-04-27",
+      "end": "2027-04-28",
+      "close": "2027-01-01",
+      "url": "https://devopsdays.org/events/2027-raleigh/propose",
+      "added": "2026-09-02"
+    },
+    {
+      "id": "devopsdays-nashville-2027",
+      "name": "devopsdays Nashville 2027",
+      "topics": [
+        "sre",
+        "cn"
+      ],
+      "city": "Murfreesboro",
+      "country": "United States",
+      "start": "2027-05-20",
+      "end": "2027-05-21",
+      "close": "2027-01-31",
+      "url": "https://sessionize.com/devopsdays-nashville-2027",
+      "added": "2026-09-08"
     }
   ]
 }
