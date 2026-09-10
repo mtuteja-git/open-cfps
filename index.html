@@ -241,14 +241,13 @@
   // Google dropped support for handing it a feed URL in a link, so: copy the link, open its From URL page, ask for a paste.
   function toGoogle(feed) {
     const url = feed.replace(/^webcal:/, 'https:');
-    // Open the tab synchronously on the click, or the browser's popup blocker eats it.
+    // Start the copy while this page still has focus, then open the tab in the same click,
+    // before the popup blocker or the focus change can interfere with either.
+    let p; try { p = navigator.clipboard.writeText(url); } catch (err) { p = Promise.reject(err); }
     const win = window.open(GOOGLE_ADD, '_blank', 'noopener');
-    const done = ok => {
-      if (ok && win) toast('Link copied. In the Google Calendar tab, paste it into "URL of calendar" and click Add calendar.');
-      else if (ok) toast('Link copied. Open Google Calendar, Settings, Add calendar, From URL, and paste it.');
-      else prompt('Copy this link, then paste it into "URL of calendar" in Google Calendar', url);
-    };
-    try { navigator.clipboard.writeText(url).then(() => done(true), () => done(false)); } catch (err) { done(false); }
+    p.then(
+      () => toast(win ? 'Link copied. In the Google Calendar tab, paste it into "URL of calendar" and click Add calendar.' : 'Link copied. Open Google Calendar, Settings, Add calendar, From URL, and paste it.'),
+      () => prompt('Copy this link, then paste it into "URL of calendar" in Google Calendar', url));
   }
 
   const $ = id => document.getElementById(id);
