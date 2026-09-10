@@ -239,13 +239,16 @@
   const feedBase = () => (location.protocol === 'https:' ? 'webcal://' : 'http://') + location.host + '/cal.ics';
   const GOOGLE_ADD = 'https://calendar.google.com/calendar/u/0/r/settings/addbyurl';
   // Google dropped support for handing it a feed URL in a link, so: copy the link, open its From URL page, ask for a paste.
-  async function toGoogle(feed) {
+  function toGoogle(feed) {
     const url = feed.replace(/^webcal:/, 'https:');
-    let copied = false;
-    try { await navigator.clipboard.writeText(url); copied = true; } catch (err) {}
-    window.open(GOOGLE_ADD, '_blank', 'noopener');
-    if (copied) toast('Link copied. In the Google Calendar tab, paste it into "URL of calendar" and click Add calendar.');
-    else prompt('Copy this link, then paste it into "URL of calendar" in the Google Calendar tab', url);
+    // Open the tab synchronously on the click, or the browser's popup blocker eats it.
+    const win = window.open(GOOGLE_ADD, '_blank', 'noopener');
+    const done = ok => {
+      if (ok && win) toast('Link copied. In the Google Calendar tab, paste it into "URL of calendar" and click Add calendar.');
+      else if (ok) toast('Link copied. Open Google Calendar, Settings, Add calendar, From URL, and paste it.');
+      else prompt('Copy this link, then paste it into "URL of calendar" in Google Calendar', url);
+    };
+    try { navigator.clipboard.writeText(url).then(() => done(true), () => done(false)); } catch (err) { done(false); }
   }
 
   const $ = id => document.getElementById(id);
