@@ -179,7 +179,7 @@
     <nav class="feeds" aria-label="Subscribe">
       <button id="pill" type="button" aria-pressed="false" aria-label="Eyes open for light, shut for dark" title="Open / shut"><span class="eye"><svg viewBox="0 0 26 16" aria-hidden="true"><path class="o" d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/><path class="s" d="M2 8 C6.5 13 19.5 13 24 8"/><path class="s lash" d="M7.3 11 L5.9 13.9 M13 11.8 L13 14.9 M18.7 11 L20.1 13.9"/><circle class="p" clip-path="url(#eyeclip)" cx="13" cy="8" r="3.6"/></svg></span><span class="eye"><svg viewBox="0 0 26 16" aria-hidden="true"><path class="o" d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/><path class="s" d="M2 8 C6.5 13 19.5 13 24 8"/><path class="s lash" d="M7.3 11 L5.9 13.9 M13 11.8 L13 14.9 M18.7 11 L20.1 13.9"/><circle class="p" clip-path="url(#eyeclip)" cx="13" cy="8" r="3.6"/></svg></span></button>
       <a href="#" id="cal-all" title="Every deadline on this page, in your calendar, kept current each Monday">Add all to my calendar</a>
-      <a href="#" id="cal-all-google" target="_blank" rel="noopener" title="Subscribes your Google Calendar to every deadline">Add all to Google Calendar</a>
+      <a href="#" id="cal-all-google" title="Copies the feed link and opens Google Calendar's From URL page: paste, then Add calendar">Add all to Google Calendar</a>
       <a href="https://github.com/mtuteja-git/open-cfps/issues/new?template=cfp.yml" target="_blank" rel="noopener" title="Open an issue on GitHub">Suggest a CFP</a>
     </nav>
   </header>
@@ -237,7 +237,16 @@
   const strip = u => u.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const feedBase = () => (location.protocol === 'https:' ? 'webcal://' : 'http://') + location.host + '/cal.ics';
-  const googleUrl = feed => 'https://calendar.google.com/calendar/r?cid=' + encodeURIComponent(feed.replace(/^webcal:/, 'https:'));
+  const GOOGLE_ADD = 'https://calendar.google.com/calendar/u/0/r/settings/addbyurl';
+  // Google dropped support for handing it a feed URL in a link, so: copy the link, open its From URL page, ask for a paste.
+  async function toGoogle(feed) {
+    const url = feed.replace(/^webcal:/, 'https:');
+    let copied = false;
+    try { await navigator.clipboard.writeText(url); copied = true; } catch (err) {}
+    window.open(GOOGLE_ADD, '_blank', 'noopener');
+    if (copied) toast('Link copied. In the Google Calendar tab, paste it into "URL of calendar" and click Add calendar.');
+    else prompt('Copy this link, then paste it into "URL of calendar" in the Google Calendar tab', url);
+  }
 
   const $ = id => document.getElementById(id);
 
@@ -278,7 +287,7 @@
     setTheme(saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches, false);
   })();
   const toastEl = $('toast'); let toastTimer;
-  function toast(msg) { toastEl.textContent = msg; toastEl.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { toastEl.hidden = true; }, 4000); }
+  function toast(msg) { toastEl.textContent = msg; toastEl.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { toastEl.hidden = true; }, 9000); }
 
   async function main() {
     const res = await fetch('data/cfps.json', { cache: 'no-cache' });
@@ -292,7 +301,7 @@
     const countries = new Set(rows.map(r => r.country));
     $('last').textContent = ' Last update ' + fmt(data.updated) + ', ' + d(data.updated).getFullYear() + '.';
     $('cal-all').href = feedBase();
-    $('cal-all-google').href = googleUrl(feedBase());
+    $('cal-all-google').onclick = e => { e.preventDefault(); toGoogle(feedBase()); };
 
     // Closing strip
     const soon = rows.filter(r => r.days <= 7);
@@ -337,7 +346,7 @@
     });
     $('bar-clear').onclick = () => { picked.clear(); updateBar(); render(); };
     $('bar-add').onclick = () => { location.href = pickUrl(); };
-    $('bar-google').onclick = () => { window.open(googleUrl(pickUrl()), '_blank', 'noopener'); };
+    $('bar-google').onclick = () => { toGoogle(pickUrl()); };
     $('bar-copy').onclick = async () => {
       const url = pickUrl().replace(/^webcal:/, 'https:');
       try { await navigator.clipboard.writeText(url); toast('Link copied. Paste it wherever your calendar asks for a subscription URL.'); }
