@@ -141,6 +141,8 @@
   .bar .n small { display: block; opacity: 0.7; margin-top: 2px; }
   .bar button { padding: 6px 12px; border-radius: 6px; border: 1px solid transparent; background: var(--bg); color: var(--text); cursor: pointer; font-weight: 500; }
   .bar button.ghost { background: transparent; color: var(--bg); border-color: rgba(255,255,255,0.35); }
+  .bar a.btn { padding: 6px 12px; border-radius: 6px; background: var(--bg); color: var(--text); font-weight: 500; text-decoration: none; }
+  .toast code { font-family: var(--mono); font-size: 12px; user-select: all; }
   .toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 8px 14px; font-size: 13px; z-index: 6; }
 
   footer { margin-top: 28px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
@@ -179,7 +181,7 @@
     <nav class="feeds" aria-label="Subscribe">
       <button id="pill" type="button" aria-pressed="false" aria-label="Eyes open for light, shut for dark" title="Open / shut"><span class="eye"><svg viewBox="0 0 26 16" aria-hidden="true"><path class="o" d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/><path class="s" d="M2 8 C6.5 13 19.5 13 24 8"/><path class="s lash" d="M7.3 11 L5.9 13.9 M13 11.8 L13 14.9 M18.7 11 L20.1 13.9"/><circle class="p" clip-path="url(#eyeclip)" cx="13" cy="8" r="3.6"/></svg></span><span class="eye"><svg viewBox="0 0 26 16" aria-hidden="true"><path class="o" d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/><path class="s" d="M2 8 C6.5 13 19.5 13 24 8"/><path class="s lash" d="M7.3 11 L5.9 13.9 M13 11.8 L13 14.9 M18.7 11 L20.1 13.9"/><circle class="p" clip-path="url(#eyeclip)" cx="13" cy="8" r="3.6"/></svg></span></button>
       <a href="#" id="cal-all" title="Every deadline on this page, in your calendar, kept current each Monday">Add all to my calendar</a>
-      <a href="#" id="cal-all-google" title="Copies the feed link and opens Google Calendar's From URL page: paste, then Add calendar">Add all to Google Calendar</a>
+      <a href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl" id="cal-all-google" target="_blank" rel="noopener" title="Opens Google Calendar's From URL page and copies the feed link: paste, then Add calendar">Add all to Google Calendar</a>
       <a href="https://github.com/mtuteja-git/open-cfps/issues/new?template=cfp.yml" target="_blank" rel="noopener" title="Open an issue on GitHub">Suggest a CFP</a>
     </nav>
   </header>
@@ -212,7 +214,7 @@
   <div class="bar" id="bar" hidden>
     <span class="n"><b id="bar-count"></b><small>Only the deadlines you picked are added to your calendar. They keep updating each Monday if a date changes.</small></span>
     <button type="button" id="bar-add">Add picked to my calendar</button>
-    <button type="button" id="bar-google">Add picked to Google Calendar</button>
+    <a href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl" id="bar-google" target="_blank" rel="noopener" class="btn">Add picked to Google Calendar</a>
     <button type="button" class="ghost" id="bar-copy" title="For Outlook on the web or anything else: paste this as a calendar subscription">Copy link</button>
     <button type="button" class="ghost" id="bar-clear">Clear</button>
   </div>
@@ -237,17 +239,15 @@
   const strip = u => u.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const feedBase = () => (location.protocol === 'https:' ? 'webcal://' : 'http://') + location.host + '/cal.ics';
-  const GOOGLE_ADD = 'https://calendar.google.com/calendar/u/0/r/settings/addbyurl';
-  // Google dropped support for handing it a feed URL in a link, so: copy the link, open its From URL page, ask for a paste.
+  // Google no longer accepts a feed URL handed to it in a link, so the button is a plain link to its
+  // From URL page (browsers never block a real link) and the feed address is copied on the same click.
   function toGoogle(feed) {
     const url = feed.replace(/^webcal:/, 'https:');
-    // Start the copy while this page still has focus, then open the tab in the same click,
-    // before the popup blocker or the focus change can interfere with either.
-    let p; try { p = navigator.clipboard.writeText(url); } catch (err) { p = Promise.reject(err); }
-    const win = window.open(GOOGLE_ADD, '_blank', 'noopener');
-    p.then(
-      () => toast(win ? 'Link copied. In the Google Calendar tab, paste it into "URL of calendar" and click Add calendar.' : 'Link copied. Open Google Calendar, Settings, Add calendar, From URL, and paste it.'),
-      () => prompt('Copy this link, then paste it into "URL of calendar" in Google Calendar', url));
+    const show = copied => {
+      toastEl.innerHTML = (copied ? 'Copied. ' : '') + 'In the Google Calendar tab, paste this into "URL of calendar", then click Add calendar: <code>' + esc(url) + '</code>';
+      toastEl.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => { toastEl.hidden = true; }, 20000);
+    };
+    try { navigator.clipboard.writeText(url).then(() => show(true), () => show(false)); } catch (err) { show(false); }
   }
 
   const $ = id => document.getElementById(id);
@@ -303,7 +303,7 @@
     const countries = new Set(rows.map(r => r.country));
     $('last').textContent = ' Last update ' + fmt(data.updated) + ', ' + d(data.updated).getFullYear() + '.';
     $('cal-all').href = feedBase();
-    $('cal-all-google').onclick = e => { e.preventDefault(); toGoogle(feedBase()); };
+    $('cal-all-google').onclick = () => { toGoogle(feedBase()); };
 
     // Closing strip
     const soon = rows.filter(r => r.days <= 7);
