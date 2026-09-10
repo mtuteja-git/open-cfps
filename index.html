@@ -179,7 +179,7 @@
     <nav class="feeds" aria-label="Subscribe">
       <button id="pill" type="button" aria-pressed="false" aria-label="Eyes open for light, shut for dark" title="Open / shut"><span class="eye"><svg viewBox="0 0 26 16" aria-hidden="true"><path class="o" d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/><path class="s" d="M2 8 C6.5 13 19.5 13 24 8"/><path class="s lash" d="M7.3 11 L5.9 13.9 M13 11.8 L13 14.9 M18.7 11 L20.1 13.9"/><circle class="p" clip-path="url(#eyeclip)" cx="13" cy="8" r="3.6"/></svg></span><span class="eye"><svg viewBox="0 0 26 16" aria-hidden="true"><path class="o" d="M2 8 C6.5 2 19.5 2 24 8 C19.5 14 6.5 14 2 8 Z"/><path class="s" d="M2 8 C6.5 13 19.5 13 24 8"/><path class="s lash" d="M7.3 11 L5.9 13.9 M13 11.8 L13 14.9 M18.7 11 L20.1 13.9"/><circle class="p" clip-path="url(#eyeclip)" cx="13" cy="8" r="3.6"/></svg></span></button>
       <a href="#" id="cal-all" title="Every deadline on this page, in your calendar, kept current each Monday">Add all to my calendar</a>
-      <a href="#" id="cal-all-copy" title="For Google Calendar: paste this under Other calendars, From URL">Copy calendar link</a>
+      <a href="#" id="cal-all-google" target="_blank" rel="noopener" title="Subscribes your Google Calendar to every deadline">Add all to Google Calendar</a>
       <a href="https://github.com/mtuteja-git/open-cfps/issues/new?template=cfp.yml" target="_blank" rel="noopener" title="Open an issue on GitHub">Suggest a CFP</a>
     </nav>
   </header>
@@ -212,7 +212,8 @@
   <div class="bar" id="bar" hidden>
     <span class="n"><b id="bar-count"></b><small>Only the deadlines you picked are added to your calendar. They keep updating each Monday if a date changes.</small></span>
     <button type="button" id="bar-add">Add picked to my calendar</button>
-    <button type="button" class="ghost" id="bar-copy" title="For Google Calendar: paste this under Other calendars, From URL">Copy link</button>
+    <button type="button" id="bar-google">Add picked to Google Calendar</button>
+    <button type="button" class="ghost" id="bar-copy" title="For Outlook on the web or anything else: paste this as a calendar subscription">Copy link</button>
     <button type="button" class="ghost" id="bar-clear">Clear</button>
   </div>
   <div class="toast" id="toast" hidden></div>
@@ -236,6 +237,7 @@
   const strip = u => u.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const feedBase = () => (location.protocol === 'https:' ? 'webcal://' : 'http://') + location.host + '/cal.ics';
+  const googleUrl = feed => 'https://calendar.google.com/calendar/r?cid=' + encodeURIComponent(feed.replace(/^webcal:/, 'https:'));
 
   const $ = id => document.getElementById(id);
 
@@ -290,12 +292,7 @@
     const countries = new Set(rows.map(r => r.country));
     $('last').textContent = ' Last update ' + fmt(data.updated) + ', ' + d(data.updated).getFullYear() + '.';
     $('cal-all').href = feedBase();
-    $('cal-all-copy').onclick = async (e) => {
-      e.preventDefault();
-      const url = feedBase().replace(/^webcal:/, 'https:');
-      try { await navigator.clipboard.writeText(url); toast('Link copied. In Google Calendar: Other calendars, From URL, paste.'); }
-      catch (err) { prompt('Copy this link', url); }
-    };
+    $('cal-all-google').href = googleUrl(feedBase());
 
     // Closing strip
     const soon = rows.filter(r => r.days <= 7);
@@ -340,9 +337,10 @@
     });
     $('bar-clear').onclick = () => { picked.clear(); updateBar(); render(); };
     $('bar-add').onclick = () => { location.href = pickUrl(); };
+    $('bar-google').onclick = () => { window.open(googleUrl(pickUrl()), '_blank', 'noopener'); };
     $('bar-copy').onclick = async () => {
       const url = pickUrl().replace(/^webcal:/, 'https:');
-      try { await navigator.clipboard.writeText(url); toast('Link copied. In Google Calendar: Other calendars, From URL, paste.'); }
+      try { await navigator.clipboard.writeText(url); toast('Link copied. Paste it wherever your calendar asks for a subscription URL.'); }
       catch (err) { prompt('Copy this link', url); }
     };
 
