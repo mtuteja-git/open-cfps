@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14",
+  "updated": "2026-09-21",
   "topics": {
     "ai": "AI infra",
     "ag": "Agents & MCP",
@@ -11,292 +11,6 @@
     "dev": "Developer tooling"
   },
   "cfps": [
-    {
-      "id": "cloud-tech-tallinn-2027",
-      "name": "Cloud Tech Tallinn 2027",
-      "topics": [
-        "cn",
-        "ai"
-      ],
-      "city": "Tallinn",
-      "country": "Estonia",
-      "start": "2027-02-04",
-      "end": "2027-02-05",
-      "close": "2026-09-15",
-      "url": "https://sessionize.com/cloud-tech-tallinn-2027",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "jakartaone-livestream-2026",
-      "name": "JakartaOne Livestream 2026",
-      "topics": [
-        "oss",
-        "dev"
-      ],
-      "city": "Online",
-      "country": "Online",
-      "start": "2026-12-01",
-      "end": "2026-12-01",
-      "close": "2026-09-15",
-      "url": "https://sessionize.com/jakartaone-livestream-2026",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "pgconf-nepal-2026",
-      "name": "PGConf.Nepal 2026",
-      "topics": [
-        "db",
-        "oss"
-      ],
-      "city": "Kathmandu",
-      "country": "Nepal",
-      "start": "2026-11-18",
-      "end": "2026-11-21",
-      "close": "2026-09-15",
-      "url": "https://2026.pgconf.org.np/call/papers/",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "platformcon-live-sao-paulo",
-      "name": "PlatformCon Live Day São Paulo",
-      "topics": [
-        "cn",
-        "dev"
-      ],
-      "city": "São Paulo",
-      "country": "Brazil",
-      "start": "2026-11-07",
-      "end": "2026-11-07",
-      "close": "2026-09-15",
-      "url": "https://sessionize.com/platformcon-live-sao-paulo",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "usenix-fast-27",
-      "name": "USENIX FAST 27",
-      "topics": [
-        "sys",
-        "db"
-      ],
-      "city": "Renton",
-      "country": "United States",
-      "start": "2027-02-23",
-      "end": "2027-02-25",
-      "close": "2026-09-15",
-      "url": "https://usenix.org/conference/fast27/call-for-papers",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "llmday-austin-q4",
-      "name": "LLMday Austin Q4",
-      "topics": [
-        "ai",
-        "ag"
-      ],
-      "city": "Austin",
-      "country": "United States",
-      "start": "2026-10-14",
-      "end": "2026-10-14",
-      "close": "2026-09-16",
-      "url": "https://cfp.ninja/e/llmday-2026-austin-q4",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "devopsdays-brasilia",
-      "name": "devopsdays Brasilia",
-      "topics": [
-        "sre",
-        "cn"
-      ],
-      "city": "Brasilia",
-      "country": "Brazil",
-      "start": "2026-11-14",
-      "end": "2026-11-14",
-      "close": "2026-09-17",
-      "url": "https://cfp.ninja/e/devops-days-braslia-2026",
-      "added": "2026-09-08"
-    },
-    {
-      "id": "eurosys-2027",
-      "name": "EuroSys 2027 (fall deadline)",
-      "topics": [
-        "sys",
-        "ai"
-      ],
-      "city": "Rabat",
-      "country": "Morocco",
-      "start": "2027-04-19",
-      "end": "2027-04-23",
-      "close": "2026-09-17",
-      "url": "https://2027.eurosys.org/cfp.html",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "ai-devworld",
-      "name": "AI DevWorld",
-      "topics": [
-        "ai",
-        "dev"
-      ],
-      "city": "Santa Clara",
-      "country": "United States",
-      "start": "2027-02-09",
-      "end": "2027-02-11",
-      "close": "2026-09-18",
-      "url": "https://sessionize.com/aidevworld-2027",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "cloud-native-ai-summit-europe",
-      "name": "Cloud Native AI Summit Europe",
-      "topics": [
-        "ai",
-        "cn"
-      ],
-      "city": "Paris",
-      "country": "France",
-      "start": "2026-12-02",
-      "end": "2026-12-03",
-      "close": "2026-09-18",
-      "url": "https://sessionize.com/cloud-native-summit-europe-2026",
-      "added": "2026-09-08"
-    },
-    {
-      "id": "developerweek-2027",
-      "name": "DeveloperWeek 2027",
-      "topics": [
-        "dev",
-        "ai"
-      ],
-      "city": "Santa Clara",
-      "country": "United States",
-      "start": "2027-02-09",
-      "end": "2027-02-11",
-      "close": "2026-09-18",
-      "url": "https://sessionize.com/developerweek-2027",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "gerrit-user-summit-2026",
-      "name": "Gerrit User Summit 2026",
-      "topics": [
-        "oss",
-        "dev"
-      ],
-      "city": "Sunnyvale",
-      "country": "United States",
-      "start": "2026-11-09",
-      "end": "2026-11-10",
-      "close": "2026-09-18",
-      "url": "https://sessionize.com/gerrit-user-summit-2026",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "kcd-budapest",
-      "name": "KCD Budapest",
-      "topics": [
-        "cn"
-      ],
-      "city": "Budapest",
-      "country": "Hungary",
-      "start": "2026-10-30",
-      "end": "2026-10-30",
-      "close": "2026-09-18",
-      "url": "https://sessionize.com/kcd-budapest-2026",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "monster-scale-summit-2027",
-      "name": "Monster Scale Summit 2027",
-      "topics": [
-        "db",
-        "sys",
-        "sre"
-      ],
-      "city": "Online",
-      "country": "Online",
-      "start": "2027-03-10",
-      "end": "2027-03-11",
-      "close": "2026-09-18",
-      "url": "https://sessionize.com/monster-scale-summit-2027",
-      "added": "2026-09-08"
-    },
-    {
-      "id": "opsworld-2027",
-      "name": "OpsWorld 2027",
-      "topics": [
-        "sre",
-        "cn"
-      ],
-      "city": "Santa Clara",
-      "country": "United States",
-      "start": "2027-02-09",
-      "end": "2027-02-11",
-      "close": "2026-09-18",
-      "url": "https://sessionize.com/opsworld-2027",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "cfgmgmtcamp-2027",
-      "name": "Config Management Camp 2027",
-      "topics": [
-        "sre",
-        "oss",
-        "sys"
-      ],
-      "city": "Ghent",
-      "country": "Belgium",
-      "start": "2027-02-01",
-      "end": "2027-02-03",
-      "close": "2026-09-20",
-      "url": "https://cfp.cfgmgmtcamp.org/ghent2027/cfp",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "confoo-montreal",
-      "name": "ConFoo Montreal",
-      "topics": [
-        "dev",
-        "oss"
-      ],
-      "city": "Montreal",
-      "country": "Canada",
-      "start": "2027-02-24",
-      "end": "2027-02-26",
-      "close": "2026-09-20",
-      "url": "https://confoo.ca/en/2027/call-for-papers",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "everything-open-2027",
-      "name": "Everything Open 2027",
-      "topics": [
-        "oss",
-        "sys"
-      ],
-      "city": "Brisbane",
-      "country": "Australia",
-      "start": "2027-01-20",
-      "end": "2027-01-22",
-      "close": "2026-09-20",
-      "url": "https://2027.everythingopen.au/programme/proposals",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "cloudnative-days-winter-2026",
-      "name": "CloudNative Days Winter 2026",
-      "topics": [
-        "cn",
-        "sre"
-      ],
-      "city": "Tokyo",
-      "country": "Japan",
-      "start": "2026-11-18",
-      "end": "2026-11-19",
-      "close": "2026-09-21",
-      "url": "https://event.cloudnativedays.jp/cndw2026/speakers/guidance",
-      "added": "2026-09-14"
-    },
     {
       "id": "devnexus-2027",
       "name": "DevNexus 2027",
@@ -324,6 +38,21 @@
       "end": "2026-10-22",
       "close": "2026-09-22",
       "url": "https://cfp.ninja/e/sreday-2026-warsaw-q4",
+      "added": "2026-09-14"
+    },
+    {
+      "id": "cloudnative-days-winter-2026",
+      "name": "CloudNative Days Winter 2026",
+      "topics": [
+        "cn",
+        "sre"
+      ],
+      "city": "Tokyo",
+      "country": "Japan",
+      "start": "2026-11-18",
+      "end": "2026-11-19",
+      "close": "2026-09-23",
+      "url": "https://event.cloudnativedays.jp/cndw2026/speakers/guidance",
       "added": "2026-09-14"
     },
     {
@@ -507,6 +236,36 @@
       "added": "2026-09-02"
     },
     {
+      "id": "ai-native-devcon-nyc-2026",
+      "name": "AI Native DevCon New York 2026",
+      "topics": [
+        "ai",
+        "ag",
+        "dev"
+      ],
+      "city": "Brooklyn",
+      "country": "United States",
+      "start": "2026-11-03",
+      "end": "2026-11-04",
+      "close": "2026-10-01",
+      "url": "https://sessionize.com/ai-native-devcon-nyc-2026",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-featureflags-2026",
+      "name": "Conf42 Feature Flags 2026",
+      "topics": [
+        "dev"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2026-10-15",
+      "end": "2026-10-15",
+      "close": "2026-10-01",
+      "url": "https://cfp.ninja/e/conf42-featureflags-2026",
+      "added": "2026-09-21"
+    },
+    {
       "id": "devopsdays-almaty",
       "name": "devopsdays Almaty",
       "topics": [
@@ -671,18 +430,19 @@
       "added": "2026-09-14"
     },
     {
-      "id": "sigmod-2027-research",
-      "name": "SIGMOD 2027 Research (round 4)",
+      "id": "platformday-san-francisco-q4",
+      "name": "PLATFORMday San Francisco Q4",
       "topics": [
-        "db"
+        "cn",
+        "dev"
       ],
-      "city": "Huntington Beach",
+      "city": "San Francisco",
       "country": "United States",
-      "start": "2027-06-13",
-      "end": "2027-06-19",
-      "close": "2026-10-10",
-      "url": "https://2027.sigmod.org/calls_papers_sigmod_research.shtml",
-      "added": "2026-09-14"
+      "start": "2026-11-06",
+      "end": "2026-11-06",
+      "close": "2026-10-09",
+      "url": "https://cfp.ninja/e/platformday-2026-san-francisco-q4",
+      "added": "2026-09-21"
     },
     {
       "id": "sreday-nyc-q4",
@@ -730,6 +490,20 @@
       "added": "2026-09-02"
     },
     {
+      "id": "conf42-prompt-2026",
+      "name": "Conf42 Prompt Engineering 2026",
+      "topics": [
+        "ai"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2026-10-29",
+      "end": "2026-10-29",
+      "close": "2026-10-15",
+      "url": "https://cfp.ninja/e/conf42-prompt-2026",
+      "added": "2026-09-21"
+    },
+    {
       "id": "pgconf-india-2027",
       "name": "PGConf India 2027",
       "topics": [
@@ -757,6 +531,20 @@
       "end": "2026-11-16",
       "close": "2026-10-16",
       "url": "https://sessionize.com/global-ai-conf-2026",
+      "added": "2026-09-14"
+    },
+    {
+      "id": "sigmod-2027-research",
+      "name": "SIGMOD 2027 Research (round 4)",
+      "topics": [
+        "db"
+      ],
+      "city": "Huntington Beach",
+      "country": "United States",
+      "start": "2027-06-13",
+      "end": "2027-06-19",
+      "close": "2026-10-17",
+      "url": "https://2027.sigmod.org/calls_papers_sigmod_research.shtml",
       "added": "2026-09-14"
     },
     {
@@ -792,6 +580,36 @@
       "added": "2026-09-14"
     },
     {
+      "id": "cfgmgmtcamp-2027",
+      "name": "Config Management Camp 2027",
+      "topics": [
+        "sre",
+        "oss",
+        "sys"
+      ],
+      "city": "Ghent",
+      "country": "Belgium",
+      "start": "2027-02-01",
+      "end": "2027-02-03",
+      "close": "2026-10-20",
+      "url": "https://cfp.cfgmgmtcamp.org/ghent2027/cfp",
+      "added": "2026-09-14"
+    },
+    {
+      "id": "llmday-hamburg-q4",
+      "name": "LLMday Hamburg Q4",
+      "topics": [
+        "ai"
+      ],
+      "city": "Hamburg",
+      "country": "Germany",
+      "start": "2026-11-18",
+      "end": "2026-11-18",
+      "close": "2026-10-21",
+      "url": "https://cfp.ninja/e/llmday-2026-hamburg-q4",
+      "added": "2026-09-21"
+    },
+    {
       "id": "conf42-platform-engineering-2026",
       "name": "Conf42 Platform Engineering 2026",
       "topics": [
@@ -820,6 +638,20 @@
       "close": "2026-10-23",
       "url": "https://sessionize.com/jcon-europe-2027",
       "added": "2026-09-14"
+    },
+    {
+      "id": "voxxed-days-zurich-2027",
+      "name": "Voxxed Days Zürich 2027",
+      "topics": [
+        "dev"
+      ],
+      "city": "Zürich",
+      "country": "Switzerland",
+      "start": "2027-03-08",
+      "end": "2027-03-09",
+      "close": "2026-10-23",
+      "url": "https://vdz27.cfp.dev/",
+      "added": "2026-09-21"
     },
     {
       "id": "keycloak-devday-2027",
@@ -882,6 +714,51 @@
       "close": "2026-10-30",
       "url": "https://conf.researchr.org/track/cain-2027/cain-2027-call-for-papers",
       "added": "2026-09-14"
+    },
+    {
+      "id": "monster-scale-summit-2027",
+      "name": "Monster Scale Summit 2027",
+      "topics": [
+        "db",
+        "sys",
+        "sre"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-03-10",
+      "end": "2027-03-11",
+      "close": "2026-10-30",
+      "url": "https://sessionize.com/monster-scale-summit-2027",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "cloud-native-ai-summit-europe",
+      "name": "Cloud Native AI Summit Europe",
+      "topics": [
+        "ai",
+        "cn"
+      ],
+      "city": "Paris",
+      "country": "France",
+      "start": "2026-12-02",
+      "end": "2026-12-03",
+      "close": "2026-10-31",
+      "url": "https://sessionize.com/cloud-native-summit-europe-2026",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "digital-crafts-day-2027",
+      "name": "Digital Crafts Day 2027",
+      "topics": [
+        "dev"
+      ],
+      "city": "Weiden",
+      "country": "Germany",
+      "start": "2027-04-16",
+      "end": "2027-04-16",
+      "close": "2026-10-31",
+      "url": "https://sessionize.com/digital-crafts-day-2027",
+      "added": "2026-09-21"
     },
     {
       "id": "pdug-2026",
@@ -1237,6 +1114,21 @@
       "added": "2026-09-02"
     },
     {
+      "id": "conf42-finops-2027",
+      "name": "Conf42 FinOps 2027",
+      "topics": [
+        "cn",
+        "dev"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-02-04",
+      "end": "2027-02-04",
+      "close": "2027-01-07",
+      "url": "https://cfp.ninja/e/conf42-finops-2027",
+      "added": "2026-09-21"
+    },
+    {
       "id": "pg-data-2027",
       "name": "PG DATA 2027",
       "topics": [
@@ -1267,6 +1159,35 @@
       "added": "2026-09-14"
     },
     {
+      "id": "hpsf-conference-2027",
+      "name": "HPSF Conference 2027",
+      "topics": [
+        "sys",
+        "oss"
+      ],
+      "city": "Montreal",
+      "country": "Canada",
+      "start": "2027-04-12",
+      "end": "2027-04-16",
+      "close": "2027-01-17",
+      "url": "https://events.linuxfoundation.org/hpsf-conference/program/cfp/",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-ml-2027",
+      "name": "Conf42 Machine Learning 2027",
+      "topics": [
+        "ai"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-02-18",
+      "end": "2027-02-18",
+      "close": "2027-01-21",
+      "url": "https://cfp.ninja/e/conf42-ml-2027",
+      "added": "2026-09-21"
+    },
+    {
       "id": "devopsdays-nashville-2027",
       "name": "devopsdays Nashville 2027",
       "topics": [
@@ -1280,6 +1201,50 @@
       "close": "2027-01-31",
       "url": "https://sessionize.com/devopsdays-nashville-2027",
       "added": "2026-09-08"
+    },
+    {
+      "id": "conf42-sre-2027",
+      "name": "Conf42 Site Reliability Engineering 2027",
+      "topics": [
+        "sre"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-03-04",
+      "end": "2027-03-04",
+      "close": "2027-02-04",
+      "url": "https://cfp.ninja/e/conf42-sre-2027",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "devopsdays-geneva-2027",
+      "name": "devopsdays Geneva 2027",
+      "topics": [
+        "sre",
+        "cn"
+      ],
+      "city": "Geneva",
+      "country": "Switzerland",
+      "start": "2027-05-25",
+      "end": "2027-05-26",
+      "close": "2027-02-07",
+      "url": "https://devopsdays.org/events/2027-geneva/propose",
+      "added": "2026-09-14"
+    },
+    {
+      "id": "conf42-devsecops-2027",
+      "name": "Conf42 DevSecOps 2027",
+      "topics": [
+        "dev",
+        "cn"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-03-18",
+      "end": "2027-03-18",
+      "close": "2027-02-18",
+      "url": "https://cfp.ninja/e/conf42-devsecops-2027",
+      "added": "2026-09-21"
     },
     {
       "id": "vldb-2027",
@@ -1296,21 +1261,6 @@
       "added": "2026-09-14"
     },
     {
-      "id": "devopsdays-geneva-2027",
-      "name": "devopsdays Geneva 2027",
-      "topics": [
-        "sre",
-        "cn"
-      ],
-      "city": "Geneva",
-      "country": "Switzerland",
-      "start": "2027-05-25",
-      "end": "2027-05-26",
-      "close": "2027-03-07",
-      "url": "https://devopsdays.org/events/2027-geneva/propose",
-      "added": "2026-09-14"
-    },
-    {
       "id": "sreday-katowice-2027-q2",
       "name": "SREday Katowice 2027 Q2",
       "topics": [
@@ -1323,6 +1273,163 @@
       "close": "2027-03-09",
       "url": "https://cfp.ninja/e/sreday-2027-katowice-q2",
       "added": "2026-09-14"
+    },
+    {
+      "id": "conf42-cloud-2027",
+      "name": "Conf42 Cloud Native 2027",
+      "topics": [
+        "cn"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-04-08",
+      "end": "2027-04-08",
+      "close": "2027-03-11",
+      "url": "https://cfp.ninja/e/conf42-cloud-2027",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-golang-2027",
+      "name": "Conf42 Golang 2027",
+      "topics": [
+        "dev"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-05-13",
+      "end": "2027-05-13",
+      "close": "2027-04-15",
+      "url": "https://cfp.ninja/e/conf42-golang-2027",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-dbd-2027",
+      "name": "Conf42 Database DevOps 2027",
+      "topics": [
+        "db",
+        "dev"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-05-27",
+      "end": "2027-05-27",
+      "close": "2027-04-29",
+      "url": "https://cfp.ninja/e/conf42-dbd-2027",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-llms-2027",
+      "name": "Conf42 Large Language Models 2027",
+      "topics": [
+        "ai"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-06-10",
+      "end": "2027-06-10",
+      "close": "2027-05-13",
+      "url": "https://cfp.ninja/e/conf42-llms-2027",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-featureflags-2027",
+      "name": "Conf42 Feature Flags 2027",
+      "topics": [
+        "dev"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-06-24",
+      "end": "2027-06-24",
+      "close": "2027-05-27",
+      "url": "https://cfp.ninja/e/conf42-featureflags-2027",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-remix-2027",
+      "name": "Conf42 Remix 2027",
+      "topics": [
+        "dev"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-08-19",
+      "end": "2027-08-19",
+      "close": "2027-07-22",
+      "url": "https://cfp.ninja/e/conf42-remix-2027",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-obs-2027",
+      "name": "Conf42 Observability 2027",
+      "topics": [
+        "sre"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-09-09",
+      "end": "2027-09-09",
+      "close": "2027-08-12",
+      "url": "https://cfp.ninja/e/conf42-obs-2027",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-agents-2027",
+      "name": "Conf42 AI Agents 2027",
+      "topics": [
+        "ag",
+        "ai"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-09-23",
+      "end": "2027-09-23",
+      "close": "2027-08-26",
+      "url": "https://cfp.ninja/e/conf42-agents-2027",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-prompt-2027",
+      "name": "Conf42 Prompt Engineering 2027",
+      "topics": [
+        "ai"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-10-14",
+      "end": "2027-10-14",
+      "close": "2027-09-16",
+      "url": "https://cfp.ninja/e/conf42-prompt-2027",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-platform-2027",
+      "name": "Conf42 Platform Engineering 2027",
+      "topics": [
+        "cn",
+        "dev"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-11-18",
+      "end": "2027-11-18",
+      "close": "2027-10-21",
+      "url": "https://cfp.ninja/e/conf42-platform-2027",
+      "added": "2026-09-21"
+    },
+    {
+      "id": "conf42-ce-2027",
+      "name": "Conf42 Chaos Engineering 2027",
+      "topics": [
+        "sre"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-12-16",
+      "end": "2027-12-16",
+      "close": "2027-11-18",
+      "url": "https://cfp.ninja/e/conf42-ce-2027",
+      "added": "2026-09-21"
     }
   ]
 }
