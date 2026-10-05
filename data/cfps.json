@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-10-05",
   "topics": {
     "ai": "AI infra",
     "ag": "Agents & MCP",
@@ -12,409 +12,6 @@
   },
   "cfps": [
     {
-      "id": "apache-doris-summit-2026",
-      "name": "Apache Doris Summit 2026",
-      "topics": [
-        "db",
-        "oss"
-      ],
-      "city": "Online",
-      "country": "Online",
-      "start": "2026-10-21",
-      "end": "2026-10-22",
-      "close": "2026-09-29",
-      "url": "https://sessionize.com/apache-doris-summit-2026",
-      "added": "2026-09-08"
-    },
-    {
-      "id": "icaart-2027",
-      "name": "ICAART 2027",
-      "topics": [
-        "ag",
-        "ai"
-      ],
-      "city": "Valletta",
-      "country": "Malta",
-      "start": "2027-02-23",
-      "end": "2027-02-25",
-      "close": "2026-09-29",
-      "url": "https://icaart.scitevents.org/callforpapers.aspx",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "agent-substrate-day",
-      "name": "Agent Substrate Day",
-      "topics": [
-        "ag",
-        "ai",
-        "cn"
-      ],
-      "city": "Salt Lake City",
-      "country": "United States",
-      "start": "2026-11-09",
-      "end": "2026-11-09",
-      "close": "2026-09-30",
-      "url": "https://sessionize.com/agent-substrate-day-2026",
-      "added": "2026-09-08"
-    },
-    {
-      "id": "ddd-melbourne-2027",
-      "name": "DDD Melbourne 2027",
-      "topics": [
-        "dev"
-      ],
-      "city": "Melbourne",
-      "country": "Australia",
-      "start": "2027-02-19",
-      "end": "2027-02-19",
-      "close": "2026-09-30",
-      "url": "https://sessionize.com/ddd-melbourne-2027",
-      "added": "2026-09-28"
-    },
-    {
-      "id": "devnexus-2027",
-      "name": "DevNexus 2027",
-      "topics": [
-        "dev",
-        "ai"
-      ],
-      "city": "Atlanta",
-      "country": "United States",
-      "start": "2027-03-29",
-      "end": "2027-03-31",
-      "close": "2026-09-30",
-      "url": "https://sessionize.com/devnexus-2027",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "gids",
-      "name": "GIDS (Great International Developer Summit)",
-      "topics": [
-        "dev",
-        "oss"
-      ],
-      "city": "Bengaluru",
-      "country": "India",
-      "start": "2027-04-27",
-      "end": "2027-04-30",
-      "close": "2026-09-30",
-      "url": "https://developersummit.com/cfp",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "kcd-hangzhou",
-      "name": "KCD Hangzhou",
-      "topics": [
-        "cn",
-        "ai",
-        "ag"
-      ],
-      "city": "Hangzhou",
-      "country": "China",
-      "start": "2026-11-28",
-      "end": "2026-11-28",
-      "close": "2026-09-30",
-      "url": "https://sessionize.com/kcd-hangzhou-2026",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "kcd-suisse-romande",
-      "name": "KCD Suisse Romande",
-      "topics": [
-        "cn"
-      ],
-      "city": "Geneva",
-      "country": "Switzerland",
-      "start": "2026-12-09",
-      "end": "2026-12-10",
-      "close": "2026-09-30",
-      "url": "https://sessionize.com/kcd-suisse-romande-2026",
-      "added": "2026-09-08"
-    },
-    {
-      "id": "nordevcon-2027",
-      "name": "Norfolk Developers Conference 2027",
-      "topics": [
-        "dev"
-      ],
-      "city": "Norwich",
-      "country": "United Kingdom",
-      "start": "2027-02-24",
-      "end": "2027-02-26",
-      "close": "2026-09-30",
-      "url": "https://sessionize.com/nordevcon-2027",
-      "added": "2026-09-28"
-    },
-    {
-      "id": "ubucon-india",
-      "name": "UbuCon India",
-      "topics": [
-        "oss",
-        "sys"
-      ],
-      "city": "Bengaluru",
-      "country": "India",
-      "start": "2026-11-14",
-      "end": "2026-11-15",
-      "close": "2026-09-30",
-      "url": "https://events.canonical.com/event/157/abstracts",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "aamas-27",
-      "name": "AAMAS 27",
-      "topics": [
-        "ag"
-      ],
-      "city": "Hanoi",
-      "country": "Vietnam",
-      "start": "2027-05-03",
-      "end": "2027-05-07",
-      "close": "2026-10-01",
-      "url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "ai-native-devcon-nyc-2026",
-      "name": "AI Native DevCon New York 2026",
-      "topics": [
-        "ai",
-        "ag",
-        "dev"
-      ],
-      "city": "Brooklyn",
-      "country": "United States",
-      "start": "2026-11-03",
-      "end": "2026-11-04",
-      "close": "2026-10-01",
-      "url": "https://sessionize.com/ai-native-devcon-nyc-2026",
-      "added": "2026-09-21"
-    },
-    {
-      "id": "conf42-featureflags-2026",
-      "name": "Conf42 Feature Flags 2026",
-      "topics": [
-        "dev"
-      ],
-      "city": "Online",
-      "country": "Online",
-      "start": "2026-10-15",
-      "end": "2026-10-15",
-      "close": "2026-10-01",
-      "url": "https://cfp.ninja/e/conf42-featureflags-2026",
-      "added": "2026-09-21"
-    },
-    {
-      "id": "ipdps-2027",
-      "name": "IPDPS 2027",
-      "topics": [
-        "sys"
-      ],
-      "city": "Seattle",
-      "country": "United States",
-      "start": "2027-06-01",
-      "end": "2027-06-05",
-      "close": "2026-10-01",
-      "url": "https://www.ipdps.org/ipdps2027/2027-call-for-papers.html",
-      "added": "2026-09-08"
-    },
-    {
-      "id": "jfokus-2027",
-      "name": "Jfokus 2027",
-      "topics": [
-        "dev",
-        "ai"
-      ],
-      "city": "Stockholm",
-      "country": "Sweden",
-      "start": "2027-02-08",
-      "end": "2027-02-10",
-      "close": "2026-10-01",
-      "url": "https://sessionize.com/jfokus-2027",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "llmday-nyc-q4",
-      "name": "LLMday NYC Q4",
-      "topics": [
-        "ai",
-        "ag"
-      ],
-      "city": "New York",
-      "country": "United States",
-      "start": "2026-10-29",
-      "end": "2026-10-29",
-      "close": "2026-10-01",
-      "url": "https://cfp.ninja/e/llmday-2026-nyc-q4",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "openfest",
-      "name": "OpenFest",
-      "topics": [
-        "oss",
-        "sys"
-      ],
-      "city": "Sofia",
-      "country": "Bulgaria",
-      "start": "2026-11-07",
-      "end": "2026-11-08",
-      "close": "2026-10-01",
-      "url": "https://cfp.openfest.org/openfest-2026",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "sreday-amsterdam-q4",
-      "name": "SREday Amsterdam Q4",
-      "topics": [
-        "sre"
-      ],
-      "city": "Amsterdam",
-      "country": "Netherlands",
-      "start": "2026-11-02",
-      "end": "2026-11-02",
-      "close": "2026-10-01",
-      "url": "https://cfp.ninja/e/sreday-2026-amsterdam-q4",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "cloud-community-days-mumbai",
-      "name": "Cloud Community Days Mumbai 2026",
-      "topics": [
-        "cn",
-        "ai"
-      ],
-      "city": "Mumbai",
-      "country": "India",
-      "start": "2026-10-23",
-      "end": "2026-10-23",
-      "close": "2026-10-02",
-      "url": "https://sessionize.com/ccd-mumbai-26",
-      "added": "2026-09-28"
-    },
-    {
-      "id": "ddd-brisbane-2026",
-      "name": "DDD Brisbane 2026",
-      "topics": [
-        "dev"
-      ],
-      "city": "Brisbane",
-      "country": "Australia",
-      "start": "2026-12-04",
-      "end": "2026-12-04",
-      "close": "2026-10-02",
-      "url": "https://sessionize.com/ddd-brisbane-2026",
-      "added": "2026-09-28"
-    },
-    {
-      "id": "pycon-chile-2026",
-      "name": "PyCon Chile 2026",
-      "topics": [
-        "oss",
-        "dev",
-        "ai"
-      ],
-      "city": "Santiago",
-      "country": "Chile",
-      "start": "2026-11-14",
-      "end": "2026-11-15",
-      "close": "2026-10-02",
-      "url": "https://sessionize.com/pycon-chile-2026",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "agentcon-singapore",
-      "name": "AgentCon Singapore",
-      "topics": [
-        "ag",
-        "ai"
-      ],
-      "city": "Singapore",
-      "country": "Singapore",
-      "start": "2026-11-05",
-      "end": "2026-11-05",
-      "close": "2026-10-04",
-      "url": "https://sessionize.com/agentcon-singapore",
-      "added": "2026-09-08"
-    },
-    {
-      "id": "agenticcon-san-francisco",
-      "name": "AgenticCon San Francisco",
-      "topics": [
-        "ag",
-        "ai",
-        "cn"
-      ],
-      "city": "San Francisco",
-      "country": "United States",
-      "start": "2027-02-25",
-      "end": "2027-02-25",
-      "close": "2026-10-04",
-      "url": "https://sessionize.com/agenticcon-san-francisco",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "fosdem-2027-devrooms",
-      "name": "FOSDEM 2027 (call for devrooms)",
-      "topics": [
-        "oss",
-        "sys",
-        "dev"
-      ],
-      "city": "Brussels",
-      "country": "Belgium",
-      "start": "2027-01-30",
-      "end": "2027-01-31",
-      "close": "2026-10-04",
-      "url": "https://fosdem.org/2027/news/call-for-devrooms/",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "ndc-ai-2026",
-      "name": "NDC AI 2026",
-      "topics": [
-        "ai",
-        "ag",
-        "dev"
-      ],
-      "city": "Oslo",
-      "country": "Norway",
-      "start": "2026-12-07",
-      "end": "2026-12-09",
-      "close": "2026-10-04",
-      "url": "https://sessionize.com/ndc-ai-dec-2026",
-      "added": "2026-09-28"
-    },
-    {
-      "id": "platformcon-live-san-francisco",
-      "name": "PlatformCon Live Day San Francisco",
-      "topics": [
-        "cn",
-        "dev"
-      ],
-      "city": "San Francisco",
-      "country": "United States",
-      "start": "2027-02-24",
-      "end": "2027-02-24",
-      "close": "2026-10-04",
-      "url": "https://sessionize.com/platformcon-live-day-san-francisco",
-      "added": "2026-09-08"
-    },
-    {
-      "id": "sql-konferenz-2027",
-      "name": "SQL Konferenz 2027",
-      "topics": [
-        "db"
-      ],
-      "city": "Hanau am Main",
-      "country": "Germany",
-      "start": "2027-02-22",
-      "end": "2027-02-24",
-      "close": "2026-10-04",
-      "url": "https://sessionize.com/sql-konferenz-2027",
-      "added": "2026-09-14"
-    },
-    {
       "id": "devopsdays-tel-aviv",
       "name": "devopsdays Tel Aviv",
       "topics": [
@@ -426,8 +23,23 @@
       "start": "2026-12-22",
       "end": "2026-12-22",
       "close": "2026-10-05",
-      "url": "https://in10t.ai/cfp/devopsdays-tlv-2026",
+      "url": "https://devopsdays.org/events/2026-tel-aviv/propose",
       "added": "2026-09-02"
+    },
+    {
+      "id": "data-ai-community-day-johannesburg",
+      "name": "Data and AI Community Day Johannesburg",
+      "topics": [
+        "db",
+        "ai"
+      ],
+      "city": "Johannesburg",
+      "country": "South Africa",
+      "start": "2026-10-31",
+      "end": "2026-10-31",
+      "close": "2026-10-06",
+      "url": "https://sessionize.com/data-and-ai-community-day-johannesburg-oct2026",
+      "added": "2026-10-05"
     },
     {
       "id": "kubeastra-kolkata",
@@ -442,6 +54,36 @@
       "end": "2026-10-10",
       "close": "2026-10-06",
       "url": "https://sessionize.com/cncfkolkata",
+      "added": "2026-09-28"
+    },
+    {
+      "id": "agent-substrate-day",
+      "name": "Agent Substrate Day",
+      "topics": [
+        "ag",
+        "ai",
+        "cn"
+      ],
+      "city": "Salt Lake City",
+      "country": "United States",
+      "start": "2026-11-09",
+      "end": "2026-11-09",
+      "close": "2026-10-07",
+      "url": "https://sessionize.com/agent-substrate-day-2026",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "nordevcon-2027",
+      "name": "Norfolk Developers Conference 2027",
+      "topics": [
+        "dev"
+      ],
+      "city": "Norwich",
+      "country": "United Kingdom",
+      "start": "2027-02-24",
+      "end": "2027-02-26",
+      "close": "2026-10-07",
+      "url": "https://sessionize.com/nordevcon-2027",
       "added": "2026-09-28"
     },
     {
@@ -471,6 +113,22 @@
       "end": "2026-11-07",
       "close": "2026-10-10",
       "url": "https://cfp.ninja/e/sreday-2026-nyc-q4",
+      "added": "2026-09-14"
+    },
+    {
+      "id": "agenticcon-san-francisco",
+      "name": "AgenticCon San Francisco",
+      "topics": [
+        "ag",
+        "ai",
+        "cn"
+      ],
+      "city": "San Francisco",
+      "country": "United States",
+      "start": "2027-02-25",
+      "end": "2027-02-25",
+      "close": "2026-10-11",
+      "url": "https://sessionize.com/agenticcon-san-francisco",
       "added": "2026-09-14"
     },
     {
@@ -505,6 +163,35 @@
       "added": "2026-09-02"
     },
     {
+      "id": "platformcon-live-san-francisco",
+      "name": "PlatformCon Live Day San Francisco",
+      "topics": [
+        "cn",
+        "dev"
+      ],
+      "city": "San Francisco",
+      "country": "United States",
+      "start": "2027-02-24",
+      "end": "2027-02-24",
+      "close": "2026-10-11",
+      "url": "https://sessionize.com/platformcon-live-day-san-francisco",
+      "added": "2026-09-08"
+    },
+    {
+      "id": "swetugg-stockholm-2027",
+      "name": "Swetugg Stockholm 2027",
+      "topics": [
+        "dev"
+      ],
+      "city": "Stockholm",
+      "country": "Sweden",
+      "start": "2027-02-02",
+      "end": "2027-02-03",
+      "close": "2026-10-11",
+      "url": "https://sessionize.com/swetugg-stockholm-2027",
+      "added": "2026-10-05"
+    },
+    {
       "id": "future-tech-2027",
       "name": "Future Tech 2027",
       "topics": [
@@ -517,6 +204,20 @@
       "close": "2026-10-12",
       "url": "https://sessionize.com/future-tech-2027",
       "added": "2026-09-28"
+    },
+    {
+      "id": "update-conference-krakow-2027",
+      "name": "Update Conference Krakow 2027",
+      "topics": [
+        "dev"
+      ],
+      "city": "Kraków",
+      "country": "Poland",
+      "start": "2027-06-02",
+      "end": "2027-06-03",
+      "close": "2026-10-14",
+      "url": "https://sessionize.com/update-conference-krakow-2027",
+      "added": "2026-10-05"
     },
     {
       "id": "conf42-prompt-2026",
@@ -589,6 +290,21 @@
       "close": "2026-10-17",
       "url": "https://2027.sigmod.org/calls_papers_sigmod_research.shtml",
       "added": "2026-09-14"
+    },
+    {
+      "id": "ai-con-usa-2027",
+      "name": "AI Con USA 2027",
+      "topics": [
+        "ai",
+        "ag"
+      ],
+      "city": "Seattle",
+      "country": "United States",
+      "start": "2027-06-06",
+      "end": "2027-06-11",
+      "close": "2026-10-18",
+      "url": "https://aiconusa.techwell.com/speak-ai-con-usa",
+      "added": "2026-10-05"
     },
     {
       "id": "cncf-co-located-events-europe-2027",
@@ -698,6 +414,21 @@
       "added": "2026-09-14"
     },
     {
+      "id": "icaart-2027",
+      "name": "ICAART 2027 (2nd stage: regular and position papers)",
+      "topics": [
+        "ag",
+        "ai"
+      ],
+      "city": "Valletta",
+      "country": "Malta",
+      "start": "2027-02-23",
+      "end": "2027-02-25",
+      "close": "2026-10-22",
+      "url": "https://icaart.scitevents.org/ImportantDates.aspx",
+      "added": "2026-09-14"
+    },
+    {
       "id": "jcon-europe-2027",
       "name": "JCON Europe 2027",
       "topics": [
@@ -788,6 +519,20 @@
       "added": "2026-09-14"
     },
     {
+      "id": "data-bash-26",
+      "name": "DATA BASH 26",
+      "topics": [
+        "db"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2026-12-05",
+      "end": "2026-12-05",
+      "close": "2026-10-29",
+      "url": "https://sessionize.com/data-bash-26",
+      "added": "2026-10-05"
+    },
+    {
       "id": "cain-2027",
       "name": "CAIN 2027 (AI Engineering, at ICSE)",
       "topics": [
@@ -802,6 +547,35 @@
       "close": "2026-10-30",
       "url": "https://conf.researchr.org/track/cain-2027/cain-2027-call-for-papers",
       "added": "2026-09-14"
+    },
+    {
+      "id": "data-ai-community-day-durban",
+      "name": "Data and AI Community Day Durban: Encore",
+      "topics": [
+        "db",
+        "ai"
+      ],
+      "city": "Durban",
+      "country": "South Africa",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "close": "2026-10-30",
+      "url": "https://sessionize.com/durban-encore",
+      "added": "2026-10-05"
+    },
+    {
+      "id": "data-pulse-2027",
+      "name": "Data Pulse 2027",
+      "topics": [
+        "db"
+      ],
+      "city": "Reading",
+      "country": "United Kingdom",
+      "start": "2027-02-11",
+      "end": "2027-02-11",
+      "close": "2026-10-30",
+      "url": "https://sessionize.com/data-pulse-2026",
+      "added": "2026-10-05"
     },
     {
       "id": "mlsys-2027",
@@ -924,6 +698,20 @@
       "added": "2026-09-14"
     },
     {
+      "id": "aamas-27",
+      "name": "AAMAS 27 (Blue Sky Ideas track)",
+      "topics": [
+        "ag"
+      ],
+      "city": "Hanoi",
+      "country": "Vietnam",
+      "start": "2027-05-03",
+      "end": "2027-05-07",
+      "close": "2026-11-05",
+      "url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-blue-sky-ideas/",
+      "added": "2026-09-02"
+    },
+    {
       "id": "conf42-mlops-2026",
       "name": "Conf42 MLOps 2026",
       "topics": [
@@ -1013,6 +801,20 @@
       "added": "2026-09-14"
     },
     {
+      "id": "ougn-2027",
+      "name": "OUGN 2027 (Oracle User Group Norway)",
+      "topics": [
+        "db"
+      ],
+      "city": "Oslo",
+      "country": "Norway",
+      "start": "2027-04-28",
+      "end": "2027-04-30",
+      "close": "2026-11-08",
+      "url": "https://sessionize.com/ougn2027",
+      "added": "2026-10-05"
+    },
+    {
       "id": "icde-2027",
       "name": "ICDE 2027 (round 2)",
       "topics": [
@@ -1085,6 +887,21 @@
       "added": "2026-09-08"
     },
     {
+      "id": "ccgrid-2027",
+      "name": "IEEE/ACM CCGrid 2027",
+      "topics": [
+        "sys",
+        "ai"
+      ],
+      "city": "Dallas",
+      "country": "United States",
+      "start": "2027-05-24",
+      "end": "2027-05-27",
+      "close": "2026-11-24",
+      "url": "https://hpcclab.org/ccgrid27-call-for-papers/",
+      "added": "2026-10-05"
+    },
+    {
       "id": "sigmod-2027-industrial",
       "name": "SIGMOD 2027 Industrial Track",
       "topics": [
@@ -1140,6 +957,21 @@
       "close": "2026-11-30",
       "url": "https://sessionize.com/dxday-2027-AI-edition",
       "added": "2026-09-14"
+    },
+    {
+      "id": "fossasia-summit-2027",
+      "name": "FOSSASIA Summit 2027",
+      "topics": [
+        "oss",
+        "ai"
+      ],
+      "city": "Bangkok",
+      "country": "Thailand",
+      "start": "2027-03-07",
+      "end": "2027-03-09",
+      "close": "2026-11-30",
+      "url": "https://eventyay.com/fossasia/summit2027/cfp",
+      "added": "2026-10-05"
     },
     {
       "id": "maintainer-summit-eu-2027",
@@ -1276,6 +1108,35 @@
       "added": "2026-09-14"
     },
     {
+      "id": "data-saturday-croatia-2027",
+      "name": "Data Saturday Croatia 2027",
+      "topics": [
+        "db"
+      ],
+      "city": "Zagreb",
+      "country": "Croatia",
+      "start": "2027-06-12",
+      "end": "2027-06-12",
+      "close": "2026-12-31",
+      "url": "https://sessionize.com/data-saturday-croatia-2027",
+      "added": "2026-10-05"
+    },
+    {
+      "id": "devopsdays-zurich-2027",
+      "name": "devopsdays Zurich 2027",
+      "topics": [
+        "sre",
+        "cn"
+      ],
+      "city": "Winterthur",
+      "country": "Switzerland",
+      "start": "2027-04-14",
+      "end": "2027-04-15",
+      "close": "2026-12-31",
+      "url": "https://sessionize.com/devopsdays-zurich-2027",
+      "added": "2026-10-05"
+    },
+    {
       "id": "sqlday-2027",
       "name": "SQLDay 2027",
       "topics": [
@@ -1336,6 +1197,21 @@
       "added": "2026-09-21"
     },
     {
+      "id": "rustweek-2027",
+      "name": "RustWeek 2027",
+      "topics": [
+        "sys",
+        "dev"
+      ],
+      "city": "Utrecht",
+      "country": "Netherlands",
+      "start": "2027-05-24",
+      "end": "2027-05-29",
+      "close": "2027-01-10",
+      "url": "https://sessionize.com/rustweek-2027",
+      "added": "2026-10-05"
+    },
+    {
       "id": "pg-data-2027",
       "name": "PG DATA 2027",
       "topics": [
@@ -1349,6 +1225,20 @@
       "close": "2027-01-11",
       "url": "https://sessionize.com/pg-data-2027/",
       "added": "2026-09-14"
+    },
+    {
+      "id": "day-of-data-richmond-2027",
+      "name": "Day of Data Richmond 2027",
+      "topics": [
+        "db"
+      ],
+      "city": "Richmond",
+      "country": "United States",
+      "start": "2027-03-20",
+      "end": "2027-03-20",
+      "close": "2027-01-15",
+      "url": "https://sessionize.com/dayofdata-rva-2027",
+      "added": "2026-10-05"
     },
     {
       "id": "ddd-europe-data-mesh-live-2027",
