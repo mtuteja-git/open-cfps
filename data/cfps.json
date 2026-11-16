@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-16",
   "topics": {
     "ai": "AI infra",
     "ag": "Agents & MCP",
@@ -11,495 +11,6 @@
     "dev": "Developer tooling"
   },
   "cfps": [
-    {
-      "id": "alposs-2027",
-      "name": "AlpOSS 2027",
-      "topics": [
-        "oss"
-      ],
-      "city": "Echirolles",
-      "country": "France",
-      "start": "2027-02-23",
-      "end": "2027-02-23",
-      "close": "2026-11-02",
-      "url": "https://pretalx.com/alposs-2027/cfp",
-      "added": "2026-10-15"
-    },
-    {
-      "id": "yocto-project-summit-2026-12",
-      "name": "Yocto Project Summit 2026.12",
-      "topics": [
-        "sys",
-        "oss"
-      ],
-      "city": "Online",
-      "country": "Online",
-      "start": "2026-12-01",
-      "end": "2026-12-03",
-      "close": "2026-11-02",
-      "url": "https://pretalx.com/yocto-project-summit-2026-12/cfp",
-      "added": "2026-10-15"
-    },
-    {
-      "id": "sreday-campinas-q4",
-      "name": "SREday Campinas Q4",
-      "topics": [
-        "sre"
-      ],
-      "city": "Campinas",
-      "country": "Brazil",
-      "start": "2026-12-02",
-      "end": "2026-12-03",
-      "close": "2026-11-04",
-      "url": "https://cfp.ninja/e/sreday-2026-campinas-q4",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "aamas-27",
-      "name": "AAMAS 27 (Blue Sky Ideas track)",
-      "topics": [
-        "ag"
-      ],
-      "city": "Hanoi",
-      "country": "Vietnam",
-      "start": "2027-05-03",
-      "end": "2027-05-07",
-      "close": "2026-11-05",
-      "url": "https://warwick.ac.uk/fac/sci/dcs/aamas2027/calls/call-for-blue-sky-ideas/",
-      "added": "2026-09-02"
-    },
-    {
-      "id": "conf42-mlops-2026",
-      "name": "Conf42 MLOps 2026",
-      "topics": [
-        "ai"
-      ],
-      "city": "Online",
-      "country": "Online",
-      "start": "2026-11-19",
-      "end": "2026-11-19",
-      "close": "2026-11-05",
-      "url": "https://cfp.ninja/e/conf42-mlops-2026",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "devfest-hong-kong-2026",
-      "name": "DevFest Hong Kong 2026",
-      "topics": [
-        "ai",
-        "cn",
-        "dev"
-      ],
-      "city": "Hong Kong",
-      "country": "Hong Kong",
-      "start": "2026-12-05",
-      "end": "2026-12-05",
-      "close": "2026-11-05",
-      "url": "https://sessionize.com/devfest-hong-kong-2026",
-      "added": "2026-10-15"
-    },
-    {
-      "id": "frida-2027",
-      "name": "FRIDA 2027 (Formal Reasoning in Distributed Algorithms, at POPL)",
-      "topics": [
-        "sys"
-      ],
-      "city": "Mexico City",
-      "country": "Mexico",
-      "start": "2027-01-11",
-      "end": "2027-01-11",
-      "close": "2026-11-06",
-      "url": "https://popl27.sigplan.org/home/frida-2027",
-      "added": "2026-10-15"
-    },
-    {
-      "id": "analytics-data-summit-2027",
-      "name": "Analytics and Data Summit 2027",
-      "topics": [
-        "db",
-        "ai"
-      ],
-      "city": "Redwood Shores",
-      "country": "United States",
-      "start": "2027-04-13",
-      "end": "2027-04-15",
-      "close": "2026-11-07",
-      "url": "https://sessionize.com/analytics-and-data-summit-2027",
-      "added": "2026-09-28"
-    },
-    {
-      "id": "colorado-applied-ml-mini-conf",
-      "name": "Colorado Applied Machine Learning Mini Conference",
-      "topics": [
-        "ai"
-      ],
-      "city": "Denver",
-      "country": "United States",
-      "start": "2026-12-05",
-      "end": "2026-12-05",
-      "close": "2026-11-07",
-      "url": "https://sessionize.com/colorado-applied-machine-learning-mini",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "digital-crafts-day-2027",
-      "name": "Digital Crafts Day 2027",
-      "topics": [
-        "dev"
-      ],
-      "city": "Weiden",
-      "country": "Germany",
-      "start": "2027-04-16",
-      "end": "2027-04-16",
-      "close": "2026-11-07",
-      "url": "https://sessionize.com/digital-crafts-day-2027",
-      "added": "2026-09-21"
-    },
-    {
-      "id": "llmday-montevideo-q4",
-      "name": "LLMday Montevideo Q4",
-      "topics": [
-        "ai",
-        "ag"
-      ],
-      "city": "Montevideo",
-      "country": "Uruguay",
-      "start": "2026-12-05",
-      "end": "2026-12-05",
-      "close": "2026-11-07",
-      "url": "https://cfp.ninja/e/llmday-2026-montevideo-q4",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "cern-pgday-2027",
-      "name": "CERN PGDay 2027",
-      "topics": [
-        "db",
-        "oss"
-      ],
-      "city": "Geneva",
-      "country": "Switzerland",
-      "start": "2027-02-12",
-      "end": "2027-02-12",
-      "close": "2026-11-08",
-      "url": "https://indico.cern.ch/event/1720940/abstracts/",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "devconf-in-2027",
-      "name": "DevConf.IN 2027",
-      "topics": [
-        "oss",
-        "sys",
-        "cn"
-      ],
-      "city": "Pune",
-      "country": "India",
-      "start": "2027-02-26",
-      "end": "2027-02-27",
-      "close": "2026-11-08",
-      "url": "https://pretalx.devconf.info/devconf-in-2027/cfp",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "devfest-armenia-2026",
-      "name": "DevFest Armenia 2026",
-      "topics": [
-        "ai",
-        "cn",
-        "dev"
-      ],
-      "city": "Yerevan",
-      "country": "Armenia",
-      "start": "2026-11-21",
-      "end": "2026-11-21",
-      "close": "2026-11-08",
-      "url": "https://sessionize.com/devfest-armenia-2026",
-      "added": "2026-11-02"
-    },
-    {
-      "id": "foss-backstage-2027",
-      "name": "FOSS Backstage 2027",
-      "topics": [
-        "oss"
-      ],
-      "city": "Berlin",
-      "country": "Germany",
-      "start": "2027-03-02",
-      "end": "2027-03-03",
-      "close": "2026-11-08",
-      "url": "https://pretalx.com/fossback27/cfp",
-      "added": "2026-10-26"
-    },
-    {
-      "id": "ougn-2027",
-      "name": "OUGN 2027 (Oracle User Group Norway)",
-      "topics": [
-        "db"
-      ],
-      "city": "Oslo",
-      "country": "Norway",
-      "start": "2027-04-28",
-      "end": "2027-04-30",
-      "close": "2026-11-08",
-      "url": "https://sessionize.com/ougn2027",
-      "added": "2026-10-05"
-    },
-    {
-      "id": "devfest-bogota-2026",
-      "name": "DevFest Bogotá 2026",
-      "topics": [
-        "ai",
-        "cn",
-        "dev"
-      ],
-      "city": "Chía",
-      "country": "Colombia",
-      "start": "2026-11-28",
-      "end": "2026-11-28",
-      "close": "2026-11-09",
-      "url": "https://sessionize.com/devfest-bogota-2026",
-      "added": "2026-11-02"
-    },
-    {
-      "id": "icpe-2027",
-      "name": "ICPE 2027 (ACM/SPEC Performance Engineering, research and industry tracks)",
-      "topics": [
-        "sre",
-        "sys"
-      ],
-      "city": "Gothenburg",
-      "country": "Sweden",
-      "start": "2027-05-24",
-      "end": "2027-05-28",
-      "close": "2026-11-09",
-      "url": "https://icpe2027.spec.org/important-dates/",
-      "added": "2026-10-26"
-    },
-    {
-      "id": "pycascades-2027",
-      "name": "PyCascades 2027",
-      "topics": [
-        "dev",
-        "oss"
-      ],
-      "city": "Seattle",
-      "country": "United States",
-      "start": "2027-03-20",
-      "end": "2027-03-21",
-      "close": "2026-11-09",
-      "url": "https://pretalx.com/pycascades-2027/cfp",
-      "added": "2026-10-12"
-    },
-    {
-      "id": "pytorch-day-china-2026",
-      "name": "PyTorch Day China 2026",
-      "topics": [
-        "ai",
-        "oss"
-      ],
-      "city": "Beijing",
-      "country": "China",
-      "start": "2026-12-12",
-      "end": "2026-12-12",
-      "close": "2026-11-10",
-      "url": "https://sessionize.com/pytorch-day-china-2026",
-      "added": "2026-11-02"
-    },
-    {
-      "id": "icde-2027",
-      "name": "ICDE 2027 (round 2)",
-      "topics": [
-        "db"
-      ],
-      "city": "Copenhagen",
-      "country": "Denmark",
-      "start": "2027-05-17",
-      "end": "2027-05-21",
-      "close": "2026-11-11",
-      "url": "https://icde2027.github.io/cf-research-papers.html",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "agent-2027-icse",
-      "name": "AGENT 2027 (Engineering Agentic AI Systems workshop, at ICSE)",
-      "topics": [
-        "ag",
-        "ai"
-      ],
-      "city": "Dublin",
-      "country": "Ireland",
-      "start": "2027-04-25",
-      "end": "2027-05-01",
-      "close": "2026-11-13",
-      "url": "https://conf.researchr.org/home/icse-2027/agent-2027",
-      "added": "2026-10-15"
-    },
-    {
-      "id": "agentverify-2027",
-      "name": "AGENTVERIFY 2027 (Infrastructure for Trustworthy Software Agents, at ICSE)",
-      "topics": [
-        "ag",
-        "dev"
-      ],
-      "city": "Dublin",
-      "country": "Ireland",
-      "start": "2027-04-25",
-      "end": "2027-04-25",
-      "close": "2026-11-13",
-      "url": "https://agentverify2027.github.io/",
-      "added": "2026-10-26"
-    },
-    {
-      "id": "ide-workshop-2027",
-      "name": "IDE 2027 (Integrated Development Environments workshop, at ICSE)",
-      "topics": [
-        "dev"
-      ],
-      "city": "Dublin",
-      "country": "Ireland",
-      "start": "2027-05-01",
-      "end": "2027-05-01",
-      "close": "2026-11-13",
-      "url": "https://ide-workshop.github.io/",
-      "added": "2026-10-26"
-    },
-    {
-      "id": "llm4code-2027",
-      "name": "LLM4Code 2027 (LLMs for Code workshop, at ICSE)",
-      "topics": [
-        "ag",
-        "dev"
-      ],
-      "city": "Dublin",
-      "country": "Ireland",
-      "start": "2027-05-01",
-      "end": "2027-05-01",
-      "close": "2026-11-13",
-      "url": "https://llm4code.github.io/",
-      "added": "2026-10-26"
-    },
-    {
-      "id": "llmsc-2027",
-      "name": "LLMSC 2027 (LLM Supply Chain workshop, at ICSE)",
-      "topics": [
-        "ai",
-        "oss"
-      ],
-      "city": "Dublin",
-      "country": "Ireland",
-      "start": "2027-04-27",
-      "end": "2027-04-27",
-      "close": "2026-11-13",
-      "url": "https://llmsc.github.io/",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "data-saturday-denmark-2027",
-      "name": "Data Saturday Denmark 2027",
-      "topics": [
-        "db"
-      ],
-      "city": "Kongens Lyngby",
-      "country": "Denmark",
-      "start": "2027-01-30",
-      "end": "2027-01-30",
-      "close": "2026-11-14",
-      "url": "https://sessionize.com/datasatdk-2027",
-      "added": "2026-09-14"
-    },
-    {
-      "id": "ai-agents-day-2026",
-      "name": "AI Agents Day 2026",
-      "topics": [
-        "ag",
-        "ai"
-      ],
-      "city": "Online",
-      "country": "Online",
-      "start": "2026-12-04",
-      "end": "2026-12-04",
-      "close": "2026-11-15",
-      "url": "https://sessionize.com/ai-agents-day",
-      "added": "2026-10-26"
-    },
-    {
-      "id": "codebuzz-2027",
-      "name": "CodeBuzz 2027",
-      "topics": [
-        "dev"
-      ],
-      "city": "Leipzig",
-      "country": "Germany",
-      "start": "2027-06-02",
-      "end": "2027-06-02",
-      "close": "2026-11-15",
-      "url": "https://sessionize.com/codebuzz-2027",
-      "added": "2026-10-26"
-    },
-    {
-      "id": "containerdays-london-2027",
-      "name": "ContainerDays and AI Context London 2027",
-      "topics": [
-        "cn",
-        "ai",
-        "ag",
-        "sre"
-      ],
-      "city": "London",
-      "country": "United Kingdom",
-      "start": "2027-02-10",
-      "end": "2027-02-11",
-      "close": "2026-11-15",
-      "url": "https://sessionize.com/london-containerdays-and-ai-context-2027",
-      "added": "2026-10-12"
-    },
-    {
-      "id": "datatune-2027",
-      "name": "DataTune 2027",
-      "topics": [
-        "db",
-        "ai"
-      ],
-      "city": "Nashville",
-      "country": "United States",
-      "start": "2027-03-12",
-      "end": "2027-03-13",
-      "close": "2026-11-15",
-      "url": "https://sessionize.com/datatune-2027",
-      "added": "2026-10-15"
-    },
-    {
-      "id": "devfest-pune-2026",
-      "name": "DevFest Pune 2026",
-      "topics": [
-        "ai",
-        "cn",
-        "dev"
-      ],
-      "city": "Pune",
-      "country": "India",
-      "start": "2026-12-13",
-      "end": "2026-12-13",
-      "close": "2026-11-15",
-      "url": "https://sessionize.com/devfest-pune-2026",
-      "added": "2026-10-26"
-    },
-    {
-      "id": "pyday-lima-2026",
-      "name": "PyDay Lima 2026",
-      "topics": [
-        "dev",
-        "oss"
-      ],
-      "city": "Lima",
-      "country": "Peru",
-      "start": "2026-12-11",
-      "end": "2026-12-11",
-      "close": "2026-11-15",
-      "url": "https://sessionize.com/pyday-lima-2026",
-      "added": "2026-11-02"
-    },
     {
       "id": "fosdem-2027-main-track",
       "name": "FOSDEM 2027 main track",
@@ -517,18 +28,32 @@
       "added": "2026-10-12"
     },
     {
-      "id": "agentic-ai-eng-summit-casablanca",
-      "name": "Agentic AI Engineering Summit 2026 Casablanca",
+      "id": "icpe-2027",
+      "name": "ICPE 2027 (ACM/SPEC Performance Engineering, research and industry tracks)",
       "topics": [
-        "ag",
-        "ai"
+        "sre",
+        "sys"
       ],
-      "city": "Casablanca",
-      "country": "Morocco",
-      "start": "2026-12-18",
-      "end": "2026-12-19",
-      "close": "2026-11-18",
-      "url": "https://sessionize.com/ai-engineering-summit-2026",
+      "city": "Gothenburg",
+      "country": "Sweden",
+      "start": "2027-05-24",
+      "end": "2027-05-28",
+      "close": "2026-11-16",
+      "url": "https://icpe2027.spec.org/important-dates/",
+      "added": "2026-10-26"
+    },
+    {
+      "id": "ide-workshop-2027",
+      "name": "IDE 2027 (Integrated Development Environments workshop, at ICSE)",
+      "topics": [
+        "dev"
+      ],
+      "city": "Dublin",
+      "country": "Ireland",
+      "start": "2027-05-01",
+      "end": "2027-05-01",
+      "close": "2026-11-17",
+      "url": "https://ide-workshop.github.io/",
       "added": "2026-10-26"
     },
     {
@@ -561,19 +86,19 @@
       "added": "2026-09-08"
     },
     {
-      "id": "aws-community-day-bangladesh-2026",
-      "name": "AWS Community Day Bangladesh 2026",
+      "id": "agent-2027-icse",
+      "name": "AGENT 2027 (Engineering Agentic AI Systems workshop, at ICSE)",
       "topics": [
-        "cn",
+        "ag",
         "ai"
       ],
-      "city": "Dhaka",
-      "country": "Bangladesh",
-      "start": "2026-12-12",
-      "end": "2026-12-12",
+      "city": "Dublin",
+      "country": "Ireland",
+      "start": "2027-04-25",
+      "end": "2027-05-01",
       "close": "2026-11-20",
-      "url": "https://sessionize.com/aws-community-day-bangladesh-2026",
-      "added": "2026-10-26"
+      "url": "https://conf.researchr.org/home/icse-2027/agent-2027",
+      "added": "2026-10-15"
     },
     {
       "id": "aws-community-day-nigeria-2026",
@@ -591,20 +116,19 @@
       "added": "2026-10-26"
     },
     {
-      "id": "devfest-singapore-2026",
-      "name": "DevFest Singapore 2026",
+      "id": "fosdem-2027-rust-devroom",
+      "name": "FOSDEM 2027 Rust devroom",
       "topics": [
-        "ag",
-        "ai",
-        "dev"
+        "dev",
+        "sys"
       ],
-      "city": "Singapore",
-      "country": "Singapore",
-      "start": "2026-11-28",
-      "end": "2026-11-28",
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
       "close": "2026-11-20",
-      "url": "https://sessionize.com/devfest-singapore-2026",
-      "added": "2026-10-15"
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/message/ZZZZTV3WROFLN3ZCJIQB7PP2OY24SRA5/",
+      "added": "2026-11-16"
     },
     {
       "id": "opensuse-ods-barcelona-2027",
@@ -636,6 +160,69 @@
       "added": "2026-11-02"
     },
     {
+      "id": "devfest-asaba-2026",
+      "name": "DevFest Asaba 2026",
+      "topics": [
+        "ai",
+        "cn",
+        "dev"
+      ],
+      "city": "Asaba",
+      "country": "Nigeria",
+      "start": "2026-12-05",
+      "end": "2026-12-05",
+      "close": "2026-11-21",
+      "url": "https://sessionize.com/devfest-asaba-2026",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "devfest-pune-2026",
+      "name": "DevFest Pune 2026",
+      "topics": [
+        "ai",
+        "cn",
+        "dev"
+      ],
+      "city": "Pune",
+      "country": "India",
+      "start": "2026-12-13",
+      "end": "2026-12-13",
+      "close": "2026-11-21",
+      "url": "https://sessionize.com/devfest-pune-2026",
+      "added": "2026-10-26"
+    },
+    {
+      "id": "devfest-santa-barbara-2026",
+      "name": "DevFest Santa Bárbara 2026",
+      "topics": [
+        "ai",
+        "cn",
+        "dev"
+      ],
+      "city": "Villanueva",
+      "country": "Honduras",
+      "start": "2026-12-13",
+      "end": "2026-12-13",
+      "close": "2026-11-21",
+      "url": "https://sessionize.com/devfest-santa-barbara-2026",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "llmsc-2027",
+      "name": "LLMSC 2027 (LLM Supply Chain workshop, at ICSE)",
+      "topics": [
+        "ai",
+        "oss"
+      ],
+      "city": "Dublin",
+      "country": "Ireland",
+      "start": "2027-04-27",
+      "end": "2027-04-27",
+      "close": "2026-11-21",
+      "url": "https://llmsc.github.io/",
+      "added": "2026-09-14"
+    },
+    {
       "id": "aws-community-day-lahore-2026",
       "name": "AWS Community Day Lahore 2026",
       "topics": [
@@ -649,6 +236,22 @@
       "close": "2026-11-22",
       "url": "https://sessionize.com/aws-community-day-lahore-2026",
       "added": "2026-11-02"
+    },
+    {
+      "id": "devfest-budapest-2026-on-campus",
+      "name": "DevFest Budapest 2026: On Campus Conference",
+      "topics": [
+        "ai",
+        "cn",
+        "dev"
+      ],
+      "city": "Budapest",
+      "country": "Hungary",
+      "start": "2026-11-28",
+      "end": "2026-11-28",
+      "close": "2026-11-22",
+      "url": "https://sessionize.com/devfest-budapest-2026-on-campus",
+      "added": "2026-11-16"
     },
     {
       "id": "fosdem-2027-llvm-mlir-devrooms",
@@ -680,6 +283,79 @@
       "close": "2026-11-23",
       "url": "https://ebpf.io/fosdem-2027.html",
       "added": "2026-10-26"
+    },
+    {
+      "id": "fosdem-2027-embedded-os-devroom",
+      "name": "FOSDEM 2027 Embedded and Resource-Constrained OS devroom",
+      "topics": [
+        "sys"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-23",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/message/ECBJNUPHOBNNMJ55YE6ARBN52BFAO5TK/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-emulator-devroom",
+      "name": "FOSDEM 2027 Emulator Development devroom",
+      "topics": [
+        "sys",
+        "dev"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-23",
+      "url": "https://fosdem-emudev-room.github.io/fosdem27-emulator-devroom-cfp/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-microkernel-devroom",
+      "name": "FOSDEM 2027 Microkernel and Component-based OS devroom",
+      "topics": [
+        "sys"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-23",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/thread/VNGJSJW63M3AR4EKJZOBZSO3KSFOORDL/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-systems-languages-devroom",
+      "name": "FOSDEM 2027 Open Source Systems Languages devroom",
+      "topics": [
+        "dev",
+        "sys"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-23",
+      "url": "https://mikeshah.github.io/fosdem27-ossl-devroom/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-virtualization-devroom",
+      "name": "FOSDEM 2027 Virtualization and Cloud Infrastructure devroom",
+      "topics": [
+        "cn",
+        "sys"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-23",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/thread/E5KH5RRJLB4CJYQRLZW3FPT2XXJ2ZIPX/",
+      "added": "2026-11-16"
     },
     {
       "id": "ccgrid-2027",
@@ -756,6 +432,22 @@
       "added": "2026-10-12"
     },
     {
+      "id": "devfest-abomey-calavi-2026",
+      "name": "DevFest 2026 GDG Abomey-Calavi",
+      "topics": [
+        "ai",
+        "cn",
+        "dev"
+      ],
+      "city": "Abomey-Calavi",
+      "country": "Benin",
+      "start": "2026-12-05",
+      "end": "2026-12-05",
+      "close": "2026-11-25",
+      "url": "https://sessionize.com/devfest-2026-by-gdg-abomey-calavi",
+      "added": "2026-11-16"
+    },
+    {
       "id": "dsn-2027",
       "name": "DSN 2027 (Dependable Systems and Networks, research track)",
       "topics": [
@@ -769,6 +461,20 @@
       "close": "2026-11-25",
       "url": "https://dsn2027-berlin.github.io/important-dates/",
       "added": "2026-10-26"
+    },
+    {
+      "id": "fosdem-2027-embedded-automotive-devroom",
+      "name": "FOSDEM 2027 Embedded, Mobile and Automotive devroom",
+      "topics": [
+        "sys"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-25",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/message/5DWBGJ6WH7FTXE26NQLXLYPYNLWTY27T/",
+      "added": "2026-11-16"
     },
     {
       "id": "apac-fabric-sql-conf-2027",
@@ -799,6 +505,21 @@
       "close": "2026-11-27",
       "url": "https://easychair.org/cfp/calm-27",
       "added": "2026-10-15"
+    },
+    {
+      "id": "fosdem-2027-operations-devroom",
+      "name": "FOSDEM 2027 Operations devroom",
+      "topics": [
+        "sre",
+        "cn"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-27",
+      "url": "https://github.com/OperationsDevroom/2027/blob/main/CfP.md",
+      "added": "2026-11-16"
     },
     {
       "id": "programmable-2027-sydney",
@@ -846,6 +567,52 @@
       "added": "2026-11-02"
     },
     {
+      "id": "infraiday-2027-pordenone",
+      "name": "InfrAIday 2027 Pordenone",
+      "topics": [
+        "cn",
+        "ai"
+      ],
+      "city": "Pordenone",
+      "country": "Italy",
+      "start": "2027-02-26",
+      "end": "2027-02-26",
+      "close": "2026-11-28",
+      "url": "https://sessionize.com/infraiday2027pn",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-hpc-data-devroom",
+      "name": "FOSDEM 2027 HPC, Big Data and Data Science devroom",
+      "topics": [
+        "ai",
+        "db",
+        "sys"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-29",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/message/SO3LHDA4QQRKRIP4LNQSJ6YTOL6GGURL/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-m-ecosystem-devroom",
+      "name": "FOSDEM 2027 M-Ecosystem devroom (MariaDB, MySQL and friends)",
+      "topics": [
+        "db",
+        "oss"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-31",
+      "end": "2027-01-31",
+      "close": "2026-11-29",
+      "url": "https://mariadb.org/fosdem-2027-the-m-ecosystem-devroom-call-for-participation/",
+      "added": "2026-11-16"
+    },
+    {
       "id": "azureday-poland-2027",
       "name": "AzureDay Poland 2027",
       "topics": [
@@ -872,6 +639,22 @@
       "close": "2026-11-30",
       "url": "https://sessionize.com/civo-navigate-london-2027",
       "added": "2026-09-28"
+    },
+    {
+      "id": "devfest-cuenca-2026",
+      "name": "DevFest Cuenca 2026",
+      "topics": [
+        "ai",
+        "cn",
+        "dev"
+      ],
+      "city": "Cuenca",
+      "country": "Ecuador",
+      "start": "2026-12-19",
+      "end": "2026-12-19",
+      "close": "2026-11-30",
+      "url": "https://sessionize.com/devfest-cuenca-2026",
+      "added": "2026-11-16"
     },
     {
       "id": "devoxx-greece-2027",
@@ -901,6 +684,128 @@
       "close": "2026-11-30",
       "url": "https://sessionize.com/dxday-2027-AI-edition",
       "added": "2026-09-14"
+    },
+    {
+      "id": "fosdem-2027-ai-plumbers-devroom",
+      "name": "FOSDEM 2027 AI Plumbers devroom",
+      "topics": [
+        "ai",
+        "ag",
+        "oss"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-30",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/message/A4SSLX7XOBPV2N5EXB2BX6VFTMMB4G4F/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-containers-devroom",
+      "name": "FOSDEM 2027 Containers devroom",
+      "topics": [
+        "cn",
+        "sys"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-30",
+      "url": "https://discuss.linuxcontainers.org/t/fosdem-2027-containers-devroom-call-for-papers/27476",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-cra-devroom",
+      "name": "FOSDEM 2027 Beyond the CRA devroom",
+      "topics": [
+        "oss",
+        "dev"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-30",
+      "url": "https://openssf.org/event/fosdem-2027-beyond-the-cra-building-secure-and-resilient-open-source/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-distributions-devroom",
+      "name": "FOSDEM 2027 Distributions devroom",
+      "topics": [
+        "sys",
+        "oss"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-30",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/thread/HW5GYZP64RNX7PPBKHVARSMIK6C42MNQ/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-go-devroom",
+      "name": "FOSDEM 2027 Go devroom",
+      "topics": [
+        "dev",
+        "cn"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-30",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/thread/JM3JBC64FTN7DK4PVI3HRMO57EMVTPQF/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-network-devroom",
+      "name": "FOSDEM 2027 Network devroom",
+      "topics": [
+        "sys",
+        "cn"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-30",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/message/ZEPJJRRSM5CKNJR7GY5CTVBM7ME4GY3F/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-storage-devroom",
+      "name": "FOSDEM 2027 Software Defined Storage devroom",
+      "topics": [
+        "db",
+        "sys",
+        "cn"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-11-30",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/message/5X6ZIK3QKGCKR5PUOUBKYYEL7VAIYBTL/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fossapalooza-2027",
+      "name": "FOSSapalooza 2027",
+      "topics": [
+        "oss",
+        "dev"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-29",
+      "end": "2027-01-29",
+      "close": "2026-11-30",
+      "url": "https://pretalx.com/fossapalooza-2027/cfp",
+      "added": "2026-11-16"
     },
     {
       "id": "fossasia-pgday-2027",
@@ -993,6 +898,50 @@
       "added": "2026-10-12"
     },
     {
+      "id": "fosdem-2027-dns-devroom",
+      "name": "FOSDEM 2027 DNS devroom",
+      "topics": [
+        "sys",
+        "sre"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-12-01",
+      "url": "https://blog.powerdns.com/fosdem-2027-dns-devroom-call-for-presentations",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-image-based-linux-devroom",
+      "name": "FOSDEM 2027 Image-Based Linux and Boot Integrity devroom",
+      "topics": [
+        "sys"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-12-01",
+      "url": "https://uapi-group.org/conferences/conferences/2027-01-30__fosdem-devroom/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-nix-and-nixos-devroom",
+      "name": "FOSDEM 2027 Nix and NixOS devroom",
+      "topics": [
+        "dev",
+        "sys"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-12-01",
+      "url": "https://discourse.nixos.org/t/call-for-participation-nix-and-nixos-devroom-fosdem-2027/80916",
+      "added": "2026-11-16"
+    },
+    {
       "id": "fosdem-2027-package-mgmt-devroom",
       "name": "FOSDEM 2027 Package Management devroom",
       "topics": [
@@ -1006,6 +955,36 @@
       "close": "2026-12-01",
       "url": "https://nesbitt.io/2026/10/26/package-management-devroom-at-fosdem-2027-call-for-participation.html",
       "added": "2026-10-26"
+    },
+    {
+      "id": "fosdem-2027-security-devroom",
+      "name": "FOSDEM 2027 Security devroom",
+      "topics": [
+        "oss",
+        "dev"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-12-01",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/message/RU2KRJHGYVJLT6W6XLUR3S4OW35FQXOK/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-testing-cd-devroom",
+      "name": "FOSDEM 2027 Testing and Continuous Delivery devroom",
+      "topics": [
+        "dev",
+        "sre"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-12-01",
+      "url": "https://lists.fosdem.org/hyperkitty/list/fosdem@lists.fosdem.org/thread/Q7ASYI2PMOXKYZEOOBABNYP7WS2CDYTG/",
+      "added": "2026-11-16"
     },
     {
       "id": "fosdem-pgday-2027",
@@ -1038,23 +1017,6 @@
       "added": "2026-09-28"
     },
     {
-      "id": "scale-24x-devopsdays-los-angeles",
-      "name": "SCaLE 24x + devopsdays LA + Cloud Native Days LA + PostgreSQL@SCaLE (one shared CFP)",
-      "topics": [
-        "oss",
-        "sys",
-        "sre",
-        "cn"
-      ],
-      "city": "Pasadena",
-      "country": "United States",
-      "start": "2027-04-01",
-      "end": "2027-04-04",
-      "close": "2026-12-01",
-      "url": "https://socallinuxexpo.org/scale/24x/cfp",
-      "added": "2026-09-02"
-    },
-    {
       "id": "seaql-2027",
       "name": "SeaQL 2027",
       "topics": [
@@ -1084,6 +1046,21 @@
       "added": "2026-09-02"
     },
     {
+      "id": "fosdem-2027-observability-devroom",
+      "name": "FOSDEM 2027 Monitoring and Observability devroom",
+      "topics": [
+        "sre",
+        "cn"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-12-02",
+      "url": "https://docs.google.com/document/d/1bjIIUeA6gTdC0dRwdzGe0S6R1dSA3JwfwrUXV6BVHYg/edit?tab=t.0#heading=h.dm1sd8uel8zz",
+      "added": "2026-11-16"
+    },
+    {
       "id": "fosdem-2027-local-first-devroom",
       "name": "FOSDEM 2027 Local-First, Sync Engines and CRDTs devroom",
       "topics": [
@@ -1097,6 +1074,22 @@
       "close": "2026-12-03",
       "url": "https://mailwal.com/n/nextgraph-newsletter/1960-local-first-devroom-at-fosdem-27-is-on-cfp-is-no",
       "added": "2026-10-26"
+    },
+    {
+      "id": "ai-context-new-york-2027",
+      "name": "AI Context New York 2027",
+      "topics": [
+        "ai",
+        "ag",
+        "cn"
+      ],
+      "city": "New York",
+      "country": "United States",
+      "start": "2027-03-16",
+      "end": "2027-03-17",
+      "close": "2026-12-04",
+      "url": "https://sessionize.com/ai-context-ny-co",
+      "added": "2026-09-28"
     },
     {
       "id": "middleware-2027",
@@ -1145,6 +1138,20 @@
       "added": "2026-10-26"
     },
     {
+      "id": "fosdem-2027-kernel-devroom",
+      "name": "FOSDEM 2027 Kernel devroom",
+      "topics": [
+        "sys"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-12-05",
+      "url": "https://uapi-group.org/conferences/conferences/2027-01-30_fosdem-kernel-devroom/",
+      "added": "2026-11-16"
+    },
+    {
       "id": "pune-devcon-2026",
       "name": "Pune DevCon 2026",
       "topics": [
@@ -1157,6 +1164,65 @@
       "close": "2026-12-05",
       "url": "https://sessionize.com/pune-devcon-2026",
       "added": "2026-11-02"
+    },
+    {
+      "id": "aswf-open-source-forum-2027",
+      "name": "ASWF Open Source Forum 2027",
+      "topics": [
+        "oss"
+      ],
+      "city": "Los Angeles",
+      "country": "United States",
+      "start": "2027-02-18",
+      "end": "2027-02-18",
+      "close": "2026-12-06",
+      "url": "https://sessionize.com/open-source-forum-2027",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "devfest-machala-2026",
+      "name": "DevFest Machala 2026",
+      "topics": [
+        "ai",
+        "cn",
+        "dev"
+      ],
+      "city": "Machala",
+      "country": "Ecuador",
+      "start": "2026-12-11",
+      "end": "2026-12-11",
+      "close": "2026-12-06",
+      "url": "https://sessionize.com/devfest-machala-2026",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "fosdem-2027-bsd-devroom",
+      "name": "FOSDEM 2027 BSD, illumos, bhyve, OpenZFS devroom",
+      "topics": [
+        "sys"
+      ],
+      "city": "Brussels",
+      "country": "Belgium",
+      "start": "2027-01-30",
+      "end": "2027-01-31",
+      "close": "2026-12-06",
+      "url": "https://people.freebsd.org/~rodrigo/fosdem27/",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "isca-2027-industry",
+      "name": "ISCA 2027 Industry Track",
+      "topics": [
+        "ai",
+        "sys"
+      ],
+      "city": "Atlanta",
+      "country": "United States",
+      "start": "2027-06-05",
+      "end": "2027-06-09",
+      "close": "2026-12-06",
+      "url": "https://iscaconf.org/isca2027/submit/callforpapers.php",
+      "added": "2026-11-16"
     },
     {
       "id": "ocx-2027",
@@ -1173,6 +1239,37 @@
       "close": "2026-12-06",
       "url": "https://ocxconf.org/call-for-proposals/",
       "added": "2026-10-26"
+    },
+    {
+      "id": "agentic-ai-eng-summit-casablanca",
+      "name": "Agentic AI Engineering Summit 2027 Casablanca",
+      "topics": [
+        "ag",
+        "ai"
+      ],
+      "city": "Casablanca",
+      "country": "Morocco",
+      "start": "2027-01-23",
+      "end": "2027-01-23",
+      "close": "2026-12-07",
+      "url": "https://sessionize.com/ai-engineering-summit-2027",
+      "added": "2026-10-26"
+    },
+    {
+      "id": "devopscon-mlcon-amsterdam-2027",
+      "name": "DevOpsCon + MLCon + AI Engineering Summit Amsterdam 2027",
+      "topics": [
+        "ai",
+        "ag",
+        "cn"
+      ],
+      "city": "Amsterdam",
+      "country": "Netherlands",
+      "start": "2027-04-19",
+      "end": "2027-04-23",
+      "close": "2026-12-07",
+      "url": "https://sessionize.com/devopscon-mlcon-ai-engineering-summit-2027",
+      "added": "2026-11-16"
     },
     {
       "id": "devsum-2027",
@@ -1249,21 +1346,6 @@
       "added": "2026-09-08"
     },
     {
-      "id": "containerdays-ai-context-warsaw",
-      "name": "ContainerDays AI Context Warsaw 2027",
-      "topics": [
-        "cn",
-        "ai"
-      ],
-      "city": "Warsaw",
-      "country": "Poland",
-      "start": "2027-02-23",
-      "end": "2027-02-24",
-      "close": "2026-12-15",
-      "url": "https://sessionize.com/containerdays-ai-context-warsaw-2027",
-      "added": "2026-09-08"
-    },
-    {
       "id": "elixirconf-eu-2027",
       "name": "ElixirConf EU 2027",
       "topics": [
@@ -1279,6 +1361,20 @@
       "added": "2026-11-02"
     },
     {
+      "id": "devjvm-2027",
+      "name": "DEVJVM 2027",
+      "topics": [
+        "dev"
+      ],
+      "city": "Barranquilla",
+      "country": "Colombia",
+      "start": "2027-04-10",
+      "end": "2027-04-10",
+      "close": "2026-12-18",
+      "url": "https://sessionize.com/devjvm-2027",
+      "added": "2026-11-16"
+    },
+    {
       "id": "dutch-ai-conference-2027",
       "name": "Dutch AI Conference 2027 (Dawn Conferences, one form with Appdevcon, Dutch PHP Conference, Webdevcon)",
       "topics": [
@@ -1292,6 +1388,22 @@
       "close": "2026-12-18",
       "url": "https://sessionize.com/dawn-conferences-2027",
       "added": "2026-09-14"
+    },
+    {
+      "id": "nodes-ai-2027",
+      "name": "NODES AI 2027 (graphs, GraphRAG, context engineering)",
+      "topics": [
+        "ai",
+        "ag",
+        "db"
+      ],
+      "city": "Online",
+      "country": "Online",
+      "start": "2027-04-15",
+      "end": "2027-04-15",
+      "close": "2026-12-19",
+      "url": "https://sessionize.com/nodesai-2027",
+      "added": "2026-11-16"
     },
     {
       "id": "agentarch-2027",
@@ -1441,22 +1553,6 @@
       "added": "2026-09-02"
     },
     {
-      "id": "ai-context-new-york-2027",
-      "name": "AI Context New York 2027",
-      "topics": [
-        "ai",
-        "ag",
-        "cn"
-      ],
-      "city": "New York",
-      "country": "United States",
-      "start": "2027-03-16",
-      "end": "2027-03-17",
-      "close": "2027-01-04",
-      "url": "https://sessionize.com/ai-context-ny-co",
-      "added": "2026-09-28"
-    },
-    {
       "id": "chaoscarnival-2027",
       "name": "ChaosCarnival 2027",
       "topics": [
@@ -1498,6 +1594,36 @@
       "close": "2027-01-08",
       "url": "https://sessionize.com/jnation-2027",
       "added": "2026-11-02"
+    },
+    {
+      "id": "nordic-pgday-2027",
+      "name": "Nordic PGDay 2027",
+      "topics": [
+        "db",
+        "oss"
+      ],
+      "city": "Stockholm",
+      "country": "Sweden",
+      "start": "2027-03-16",
+      "end": "2027-03-16",
+      "close": "2027-01-08",
+      "url": "https://2027.nordicpgday.org/cfp",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "iceberg-summit-2027",
+      "name": "Iceberg Summit 2027",
+      "topics": [
+        "db",
+        "oss"
+      ],
+      "city": "Santa Clara",
+      "country": "United States",
+      "start": "2027-05-19",
+      "end": "2027-05-20",
+      "close": "2027-01-10",
+      "url": "https://sessionize.com/iceberg-summit-2027",
+      "added": "2026-11-16"
     },
     {
       "id": "rustweek-2027",
@@ -1710,6 +1836,22 @@
       "added": "2026-10-12"
     },
     {
+      "id": "agntcon-mcpcon-na-2027",
+      "name": "AGNTCon + MCPCon North America 2027",
+      "topics": [
+        "ag",
+        "ai",
+        "oss"
+      ],
+      "city": "San Francisco",
+      "country": "United States",
+      "start": "2027-04-28",
+      "end": "2027-04-29",
+      "close": "2027-01-18",
+      "url": "https://events.linuxfoundation.org/agntcon-mcpcon-north-america/program/cfp/",
+      "added": "2026-11-16"
+    },
+    {
       "id": "devopsdays-atlanta-2027",
       "name": "devopsdays Atlanta 2027",
       "topics": [
@@ -1741,6 +1883,22 @@
       "added": "2026-10-15"
     },
     {
+      "id": "cloud-native-days-france-2027",
+      "name": "Cloud Native Days France 2027",
+      "topics": [
+        "cn",
+        "ai",
+        "sre"
+      ],
+      "city": "Paris",
+      "country": "France",
+      "start": "2027-06-03",
+      "end": "2027-06-03",
+      "close": "2027-01-21",
+      "url": "https://www.cloudnativedays.fr/cfp",
+      "added": "2026-11-16"
+    },
+    {
       "id": "conf42-ml-2027",
       "name": "Conf42 Machine Learning 2027",
       "topics": [
@@ -1753,6 +1911,20 @@
       "close": "2027-01-21",
       "url": "https://cfp.ninja/e/conf42-ml-2027",
       "added": "2026-09-21"
+    },
+    {
+      "id": "kcd-bangkok-2027",
+      "name": "KCD Bangkok 2027",
+      "topics": [
+        "cn"
+      ],
+      "city": "Bangkok",
+      "country": "Thailand",
+      "start": "2027-03-25",
+      "end": "2027-03-25",
+      "close": "2027-01-22",
+      "url": "https://sessionize.com/kcd-bangkok-2027",
+      "added": "2026-11-16"
     },
     {
       "id": "platmosphere-2027",
@@ -1886,6 +2058,34 @@
       "added": "2026-11-02"
     },
     {
+      "id": "kcd-texas-2027",
+      "name": "KCD Texas 2027",
+      "topics": [
+        "cn"
+      ],
+      "city": "Dallas",
+      "country": "United States",
+      "start": "2027-04-23",
+      "end": "2027-04-23",
+      "close": "2027-01-31",
+      "url": "https://pretalx.com/kcd-texas-2027/cfp",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "ow2con-2027",
+      "name": "OW2con'27",
+      "topics": [
+        "oss"
+      ],
+      "city": "Châtillon",
+      "country": "France",
+      "start": "2027-05-25",
+      "end": "2027-05-26",
+      "close": "2027-01-31",
+      "url": "https://pretalx.com/ow2con-2027/cfp",
+      "added": "2026-11-16"
+    },
+    {
       "id": "postgres-conference-2027",
       "name": "Postgres Conference 2027",
       "topics": [
@@ -1974,6 +2174,21 @@
       "close": "2027-02-07",
       "url": "https://devopsdays.org/events/2027-geneva/propose",
       "added": "2026-09-14"
+    },
+    {
+      "id": "foss-north-2027",
+      "name": "foss-north 2027",
+      "topics": [
+        "oss",
+        "sys"
+      ],
+      "city": "Gothenburg",
+      "country": "Sweden",
+      "start": "2027-04-19",
+      "end": "2027-04-20",
+      "close": "2027-02-15",
+      "url": "https://foss-north.se/events/2027/",
+      "added": "2026-11-16"
     },
     {
       "id": "pycon-austria-2027",
@@ -2133,6 +2348,20 @@
       "close": "2027-03-11",
       "url": "https://cfp.ninja/e/conf42-cloud-2027",
       "added": "2026-09-21"
+    },
+    {
+      "id": "cloudland-2027",
+      "name": "Cloudland 2027",
+      "topics": [
+        "cn"
+      ],
+      "city": "Soltau",
+      "country": "Germany",
+      "start": "2027-05-31",
+      "end": "2027-06-02",
+      "close": "2027-03-17",
+      "url": "https://sessionize.com/cloudland-2027",
+      "added": "2026-11-16"
     },
     {
       "id": "conf42-tokenomics-2027",
